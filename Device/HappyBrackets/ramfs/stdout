@@ -1,0 +1,109 @@
+08:25:07,603 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@23202c31 - Added status listener of type [ch.qos.logback.core.status.OnConsoleStatusListener]
+08:25:07,639 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@23202c31 - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+08:25:07,640 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@23202c31 - Naming appender as [STDOUT]
+08:25:07,721 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@23202c31 - Setting level of logger [ROOT] to ERROR
+08:25:07,727 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@23202c31 - Attaching appender named [STDOUT] to Logger[ROOT]
+************************************************************
+************************************************************
+************************************************************
+***            HappyBrackets Version 4.10.8.0            ***
+***                Beads Version 2.0.3.0                 ***
+************************************************************
+************************************************************
+************************************************************
+Detected SIMULATOR
+Setting config file to config/device-config.json
+Opened secondary controller discovery port on 2229
+Beads System Buffer size=1024
+.Local controllerOscServer Port 49705
+....Look for data/classes/Angelos-MacBook-Pro.local-startup.txt
+Device specific startup file not found
+Look for data/classes/startup.txt
+Beads Output buffer size=8192
+HB Status: ID 4
+Version sent 4.10.8 to port /10.0.1.137:59180 59180
+/Users/angelofraietta/Documents/HappyBrackets/Distribution/HappyBrackets Developer Kit/HappyBrackets Project/Device/HappyBrackets
+Name sent 4.10.8 to port /10.0.1.137:59180 59180
+Version sent 4.10.8 to port /10.0.1.137:59180 59180
+/Users/angelofraietta/Documents/HappyBrackets/Distribution/HappyBrackets Developer Kit/HappyBrackets Project/Device/HappyBrackets
+Name sent 4.10.8 to port /10.0.1.137:59180 59180
+Version sent 4.10.8 to port /10.0.1.137:59180 59180
+/Users/angelofraietta/Documents/HappyBrackets/Distribution/HappyBrackets Developer Kit/HappyBrackets Project/Device/HappyBrackets
+************************************************************
+
+java version "13.0.2" 2020-01-14
+Java(TM) SE Runtime Environment (build 13.0.2+8)
+Java HotSpot(TM) 64-Bit Server VM (build 13.0.2+8, mixed mode, sharing)
+
+************************************************************
+Name sent 4.10.8 to port /10.0.1.137:59180 59180
+Version sent 4.10.8 to port /10.0.1.137:59180 59180
+/Users/angelofraietta/Documents/HappyBrackets/Distribution/HappyBrackets Developer Kit/HappyBrackets Project/Device/HappyBrackets
+Name sent 4.10.8 to port /10.0.1.137:59180 59180
+Version sent 4.10.8 to port /10.0.1.137:59180 59180
+/Users/angelofraietta/Documents/HappyBrackets/Distribution/HappyBrackets Developer Kit/HappyBrackets Project/Device/HappyBrackets
+HB Status: ID 4
+Name sent 4.10.8 to port /10.0.1.137:59180 59180
+Version sent 4.10.8 to tcp /127.0.0.1
+/Users/angelofraietta/Documents/HappyBrackets/Distribution/HappyBrackets Developer Kit/HappyBrackets Project/Device/HappyBrackets
+Version sent 4.10.8 to port /10.0.1.137:59180 59180
+/Users/angelofraietta/Documents/HappyBrackets/Distribution/HappyBrackets Developer Kit/HappyBrackets Project/Device/HappyBrackets
+Name sent 4.10.8 to tcp 
+Name sent 4.10.8 to port /10.0.1.137:59180 59180
+Version sent 4.10.8 to port /10.0.1.137:59180 59180
+/Users/angelofraietta/Documents/HappyBrackets/Distribution/HappyBrackets Developer Kit/HappyBrackets Project/Device/HappyBrackets
+Name sent 4.10.8 to port /10.0.1.137:59180 59180
+Gain changed to : 0.09286621
+Gain changed to : 0.09286621
+Gain changed to : 0.09286621
+HB Status: ID 4
+HB Status: ID 4
+Version sent 4.10.8 to tcp /127.0.0.1
+/Users/angelofraietta/Documents/HappyBrackets/Distribution/HappyBrackets Developer Kit/HappyBrackets Project/Device/HappyBrackets
+Name sent 4.10.8 to tcp 
+Version sent 4.10.8 to tcp /127.0.0.1
+/Users/angelofraietta/Documents/HappyBrackets/Distribution/HappyBrackets Developer Kit/HappyBrackets Project/Device/HappyBrackets
+Name sent 4.10.8 to tcp 
+Gain changed to : 0.16252607
+Gain changed to : 0.16252607
+Gain changed to : 0.16252607
+Gain changed to : 0.16717006
+Gain changed to : 0.16717006
+Gain changed to : 0.16717006
+HB Status: Received class load request
+HB Status: Loading /
+HB Status: Loading SimpleMIDI
+HB Status: Reset
+HB Status: SimpleMIDI Loaded
+Exception in thread "Thread-14" java.lang.ArrayIndexOutOfBoundsException: 15
+	at javazoom.jl.decoder.LayerIDecoder$SubbandLayer1Stereo.read_allocation(Unknown Source)
+	at javazoom.jl.decoder.LayerIDecoder.readAllocation(Unknown Source)
+	at javazoom.jl.decoder.LayerIDecoder.decodeFrame(Unknown Source)
+	at javazoom.jl.decoder.Decoder.decodeFrame(Unknown Source)
+	at javazoom.spi.mpeg.sampled.convert.DecodedMpegAudioInputStream.execute(Unknown Source)
+	at org.tritonus.share.TCircularBuffer.read(TCircularBuffer.java:134)
+	at org.tritonus.share.sampled.convert.TAsynchronousFilteredAudioInputStream.read(TAsynchronousFilteredAudioInputStream.java:189)
+	at com.sun.media.sound.AudioFloatInputStream$DirectAudioFloatInputStream.read(AudioFloatInputStream.java:178)
+	at com.sun.media.sound.SoftAbstractResampler$ModelAbstractResamplerStream.nextBuffer(SoftAbstractResampler.java:208)
+	at com.sun.media.sound.SoftAbstractResampler$ModelAbstractResamplerStream.open(SoftAbstractResampler.java:135)
+	at com.sun.media.sound.SoftVoice.processControlLogic(SoftVoice.java:614)
+	at com.sun.media.sound.SoftMainMixer.processAudioBuffers(SoftMainMixer.java:505)
+	at com.sun.media.sound.SoftMainMixer$2.fillBuffer(SoftMainMixer.java:880)
+	at com.sun.media.sound.SoftMainMixer$2.read(SoftMainMixer.java:893)
+	at javax.sound.sampled.AudioInputStream.read(AudioInputStream.java:292)
+	at com.sun.media.sound.SoftSynthesizer$WeakAudioStream.read(SoftSynthesizer.java:108)
+	at javax.sound.sampled.AudioInputStream.read(AudioInputStream.java:292)
+	at com.sun.media.sound.SoftJitterCorrector$JitterStream$1.run(SoftJitterCorrector.java:186)
+	at java.lang.Thread.run(Thread.java:748)
+HB Status: Reset
+HB Status: Received class load request
+HB Status: Loading -
+HB Status: Received class load request
+HB Status: Loading \
+Exception in thread "Thread-7" java.lang.LinkageError: loader (instance of  net/happybrackets/device/dynamic/DynamicClassLoader): attempted  duplicate class definition for name: "MidiPlay"
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:642)
+	at net.happybrackets.device.dynamic.DynamicClassLoader.createNewClass(DynamicClassLoader.java:31)
+	at net.happybrackets.device.HB$3.run(HB.java:1139)
+HB Status: Reset
