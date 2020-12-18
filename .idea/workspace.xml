@@ -1,7 +1,198 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8ac14a86-6248-4999-beb1-94c7835de615" name="Default" comment="" />
+    <list default="true" id="8ac14a86-6248-4999-beb1-94c7835de615" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/model_renderer_example/sketches/ExampleForASUFolks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model_renderer_example/sketches/ExampleForASUFolksBLANK.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model_renderer_example/sketches/HackExperimentQuadrants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Device/HappyBrackets/HB.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Device/HappyBrackets/HB.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/basic/FrequencyEnvelope.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/basic/GainEnvelope.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/basic/HelloWorld.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/basic/PolyLimitedOutput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/booleancontrol/BooleanControlSample$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/booleancontrol/BooleanControlSample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/booleancontrol/MonitorBoolean$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/booleancontrol/MonitorBoolean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/classobjectcontrols/GlobalCustomExample$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/classobjectcontrols/GlobalCustomExample$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/classobjectcontrols/GlobalCustomExample$SampleClassMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/classobjectcontrols/GlobalCustomExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/classobjectcontrols/GlobalReceiveAccelerometer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/classobjectcontrols/GlobalReceiveAccelerometer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/classobjectcontrols/GlobalSendAccelerometer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/classobjectcontrols/GlobalSendAccelerometer$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/classobjectcontrols/GlobalSendAccelerometer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/floatcontrol/ChangeControlTypes$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/floatcontrol/ChangeControlTypes$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/floatcontrol/ChangeControlTypes$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/floatcontrol/ChangeControlTypes$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/floatcontrol/ChangeControlTypes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/floatcontrol/FloatBuddyControlSample$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/floatcontrol/FloatBuddyControlSample$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/floatcontrol/FloatBuddyControlSample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/floatcontrol/FloatSliderControlSample$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/floatcontrol/FloatSliderControlSample$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/floatcontrol/FloatSliderControlSample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/floatcontrol/FloatTextControlSample$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/floatcontrol/FloatTextControlSample$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/floatcontrol/FloatTextControlSample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/floatcontrol/MonitorFloats$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/floatcontrol/MonitorFloats.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/globalcontrol/GlobalControl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/globalcontrol/GlobalControl$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/globalcontrol/GlobalControl$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/globalcontrol/GlobalControl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/globalcontrol/TargetControl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/globalcontrol/TargetControl$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/globalcontrol/TargetControl$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/globalcontrol/TargetControl$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/globalcontrol/TargetControl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/integerControl/ChangeControlTypes$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/integerControl/ChangeControlTypes$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/integerControl/ChangeControlTypes$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/integerControl/ChangeControlTypes$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/integerControl/ChangeControlTypes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/integerControl/IntegerBuddyControlSample$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/integerControl/IntegerBuddyControlSample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/integerControl/IntegerSliderControlSample$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/integerControl/IntegerSliderControlSample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/integerControl/IntegerTextControlSample$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/integerControl/IntegerTextControlSample$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/integerControl/IntegerTextControlSample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/integerControl/MonitorIntegers$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/integerControl/MonitorIntegers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/textcontrol/SampleTextControl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/textcontrol/SampleTextControl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/textcontrol/StringMonitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/triggercontrol/TriggerControlSample$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/controls/triggercontrol/TriggerControlSample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/events/clocks/SensorControlledBeadsClock$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/events/clocks/SensorControlledBeadsClock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/events/clocks/SensorControlledClock$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/events/clocks/SensorControlledClock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/events/clocks/SimpleClock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/events/clocks/VariableClock$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/events/clocks/VariableClock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/events/delay/DelayPitch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/events/envelope/EnvelopeTrigger$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/events/envelope/EnvelopeTrigger$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/events/envelope/EnvelopeTrigger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/events/scheduled/AdjustSynchroniser$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/events/scheduled/AdjustSynchroniser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/events/scheduled/FollowBoolean$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/events/scheduled/FollowBoolean$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/events/scheduled/FollowBoolean$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/events/scheduled/FollowBoolean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/events/scheduled/FollowFloats$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/events/scheduled/FollowFloats$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/events/scheduled/FollowFloats$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/events/scheduled/FollowFloats.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/events/scheduled/FollowInts$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/events/scheduled/FollowInts$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/events/scheduled/FollowInts$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/events/scheduled/FollowInts.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/events/scheduled/RunAtTime.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/events/scheduled/ScheduleEvent$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/events/scheduled/ScheduleEvent$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/events/scheduled/ScheduleEvent$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/events/scheduled/ScheduleEvent$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/events/scheduled/ScheduleEvent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/events/scheduled/ShowTime$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/events/scheduled/ShowTime$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/events/scheduled/ShowTime.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/fmsynthesis/BasicFM$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/fmsynthesis/BasicFM.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/fmsynthesis/RatioDepthFM$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/fmsynthesis/RatioDepthFM.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/gpio/DigitalInGPIO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/gpio/DigitalOutGPIO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/gpio/PWMOutGPIO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/gpio/PulseDigitalOutGPIO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/midi/basic/MajorChord.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/midi/basic/MinorChord.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/midi/basic/SimpleMIDI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/midi/scales/CustomScale.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/midi/scales/MajorScale.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/midi/scales/MajorScaleModulo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/multiple/SampleController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/multiple/SampleController$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/multiple/SampleController$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/multiple/SampleController$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/multiple/SampleController$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/multiple/SampleController$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/multiple/SampleController$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/multiple/SampleController$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/multiple/SampleController$9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/multiple/SampleController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/osc/GetControllerAddress.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/osc/OSCReceiveValues$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/osc/OSCReceiveValues.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/osc/OSCSendAccelerometer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/osc/OSCSendAccelerometer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/osc/OSCSender$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/osc/OSCSender$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/osc/OSCSender$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/osc/OSCSender$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/osc/OSCSender$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/osc/OSCSender$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/osc/OSCSender$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/osc/OSCSender$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/osc/OSCSender.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/pihat/PiHatDigitalInGPIO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/pihat/PiHatDigitalOutGPIO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/pythonscript/RunCommandline$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/pythonscript/RunCommandline.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/pythonscript/RunProcessAndArguments$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/pythonscript/RunProcessAndArguments.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/samples/AlternatingLoopedSamplePlayer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/samples/LoopedSamplePlayer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/samples/SampleChangeSpeed.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/samples/SamplePitchShift.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/samples/SimpleSamplePlayer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/samples/sensorcontroller/SampleDirectionGyroscope$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/samples/sensorcontroller/SampleDirectionGyroscope.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/samples/sensorcontroller/SampleRateAccelerometer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/samples/sensorcontroller/SampleRateAccelerometer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/samples/sensorcontroller/SampleSpeedAndDirection$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/samples/sensorcontroller/SampleSpeedAndDirection$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/samples/sensorcontroller/SampleSpeedAndDirection$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/samples/sensorcontroller/SampleSpeedAndDirection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/sensor/accelerometer/MonitorAccelerometer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/sensor/accelerometer/MonitorAccelerometer$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/sensor/accelerometer/MonitorAccelerometer$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/sensor/accelerometer/MonitorAccelerometer$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/sensor/accelerometer/MonitorAccelerometer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/sensor/accelerometer/SimpleAccelerometer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/sensor/accelerometer/TripleAxisAccelerometer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/sensor/accelerometer/TripleAxisAccelerometer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/sensor/gyroscope/MonitorGyroscope$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/sensor/gyroscope/MonitorGyroscope$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/sensor/gyroscope/MonitorGyroscope$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/sensor/gyroscope/MonitorGyroscope$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/sensor/gyroscope/MonitorGyroscope.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/sensor/gyroscope/SimpleGyroscope$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/sensor/gyroscope/SimpleGyroscope.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/sensor/gyroscope/TripleAxisGyroscope$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/sensor/gyroscope/TripleAxisGyroscope.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/threads/ControlledThread$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/threads/ControlledThread$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/threads/ControlledThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/threads/CreatedThread$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/threads/CreatedThread$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/threads/CreatedThread$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/threads/CreatedThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/examples/threads/SimpleThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/model_renderer_example/renderers/GenericSampleAndClockRenderer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/production/HBModelRendererExample/model_renderer_example/renderers/GenericSampleAndClockRenderer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/model_renderer_example/renderers/GenericSampleAndClockRenderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/production/HBModelRendererExample/model_renderer_example/renderers/GenericSampleAndClockRenderer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/model_renderer_example/renderers/SimpleLightRenderer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/model_renderer_example/sketches/SimpleRhythmExample$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/model_renderer_example/sketches/SimpleRhythmExample$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/model_renderer_example/sketches/SimpleRhythmExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model_renderer_example/renderers/GenericSampleAndClockRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model_renderer_example/renderers/GenericSampleAndClockRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model_renderer_example/sketches/SimpleRhythmExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model_renderer_example/sketches/SimpleRhythmExample.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/build/production/HBModelRendererExample/" />
     <ignored path="$PROJECT_DIR$/build/test/HBModelRendererExample/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,7 +206,62 @@
     <option name="PARALLEL_COMPILATION" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model_renderer_example/sketches/SimpleRhythmExample.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="404">
+              <caret line="94" column="38" selection-start-line="94" selection-start-column="38" selection-end-line="94" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/model_renderer_example/sketches/HackExperimentQuadrants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1770">
+              <caret line="118" lean-forward="true" selection-start-line="118" selection-end-line="118" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model_renderer_example/sketches/ExampleForASUFolks.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model_renderer_example/sketches/ExampleForASUFolksBLANK.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model_renderer_example/renderers/SimpleLightRenderer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -26,10 +272,16 @@
     </option>
     <option name="SCHEME" value="Project" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/model_renderer_example/sketches/ExampleForASUFolksBLANK.java" />
+        <option value="$PROJECT_DIR$/src/model_renderer_example/sketches/ExampleForASUFolks.java" />
         <option value="$PROJECT_DIR$/src/model_renderer_example/sketches/SimpleRhythmExample.java" />
+        <option value="$PROJECT_DIR$/src/model_renderer_example/sketches/HackExperimentQuadrants.java" />
       </list>
     </option>
   </component>
@@ -39,9 +291,10 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
+    <option name="x" value="212" />
     <option name="y" value="23" />
-    <option name="width" value="1440" />
+    <option name="width" value="1228" />
     <option name="height" value="877" />
   </component>
   <component name="ProjectView">
@@ -49,8 +302,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -68,21 +321,6 @@
               <item name="HBModelRendererExample" type="462c0819:PsiDirectoryNode" />
               <item name="Device" type="462c0819:PsiDirectoryNode" />
               <item name="HappyBrackets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HBModelRendererExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HBModelRendererExample" type="462c0819:PsiDirectoryNode" />
-              <item name="Device" type="462c0819:PsiDirectoryNode" />
-              <item name="HappyBrackets" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HBModelRendererExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HBModelRendererExample" type="462c0819:PsiDirectoryNode" />
-              <item name="Device" type="462c0819:PsiDirectoryNode" />
-              <item name="HappyBrackets" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HBModelRendererExample" type="b2602c69:ProjectViewProjectNode" />
@@ -116,7 +354,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1602734222812" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1608329911958" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -125,7 +363,12 @@
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="model_renderer_example.renderers" />
+      <recent name="model_renderer_example.sketches" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/model_renderer_example/sketches" />
       <recent name="$PROJECT_DIR$/Device/HappyBrackets" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
@@ -186,9 +429,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
+    <frame x="212" y="23" width="1228" height="877" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30114448" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2015177" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24959612" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -210,7 +454,7 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" sideWeight="0.496063" weight="0.1648" />
       <window_info anchor="right" id="Palette" order="2" />
-      <window_info active="true" anchor="right" id="HappyBrackets" order="3" sideWeight="0.496063" visible="true" weight="0.2932761" />
+      <window_info anchor="right" id="HappyBrackets" order="3" sideWeight="0.496063" visible="true" weight="0.27908936" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
@@ -224,20 +468,51 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.sh" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/model_renderer_example/renderers/SimpleLightRenderer.java">
+    <entry file="file://$PROJECT_DIR$/src/model_renderer_example/renderers/GenericSampleAndClockRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model_renderer_example/renderers/GenericSampleAndClockRenderer.java">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/model_renderer_example/renderers/SimpleLightRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model_renderer_example/sketches/ExampleForASUFolksBLANK.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model_renderer_example/sketches/ExampleForASUFolks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model_renderer_example/sketches/SimpleRhythmExample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="110" column="45" lean-forward="true" selection-start-line="110" selection-start-column="45" selection-end-line="110" selection-end-column="45" />
+        <state relative-caret-position="404">
+          <caret line="94" column="38" selection-start-line="94" selection-start-column="38" selection-end-line="94" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model_renderer_example/sketches/HackExperimentQuadrants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1770">
+          <caret line="118" lean-forward="true" selection-start-line="118" selection-end-line="118" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

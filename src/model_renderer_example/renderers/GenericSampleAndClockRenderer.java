@@ -1,12 +1,12 @@
 package model_renderer_example.renderers;
 
+import net.beadsproject.beads.core.UGen;
 import net.beadsproject.beads.data.Buffer;
 import net.beadsproject.beads.data.Sample;
 import net.beadsproject.beads.data.SampleManager;
 import net.beadsproject.beads.ugens.*;
 import net.happybrackets.sychronisedmodel.Renderer;
 import net.happybrackets.sychronisedmodel.RendererController;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,17 +19,19 @@ import java.util.List;
 
 public class GenericSampleAndClockRenderer extends Renderer {
 
-    //list of sounds
-    public static List<Sample> samples = new ArrayList<>();
-
     //the renderer controller
     RendererController rc = RendererController.getInstance();
 
     //audio objects
-    boolean useGranular = true;
     GranularSamplePlayer gsp;
     SamplePlayer sp;
+    float grainInterval;
     Gain g;
+    WavePlayer fmModulator;
+    WavePlayer fm;
+    BiquadFilter bf;
+    UGen theActualOut;
+    float fmDepth = 0;
 
     //lfo
     WavePlayer lfo;
@@ -42,7 +44,7 @@ public class GenericSampleAndClockRenderer extends Renderer {
     //other timing params
     int clockIntervalLock = 0;
     double clockLockPosition = 0;
-    float clockDelayTicks = 0;
+    int clockDelayTicks = 0;
 
     //light data
     private double[] sparkleD = new double[]{0, 0, 0};
@@ -53,9 +55,8 @@ public class GenericSampleAndClockRenderer extends Renderer {
     double sparkle = 0;
 
     //id for tracking event objects
-    public int currentSample = -1;
-    int timeoutThresh = 50;
-    int timeout = 0;
+    int timeoutThresh = -1;
+    int timeoutCount = 0;
     boolean audioIsSetup = false;
     long timeOfLastTriggerMS = 0;
 
@@ -63,7 +64,7 @@ public class GenericSampleAndClockRenderer extends Renderer {
     public void setupLight() {
         rc.addClockTickListener((offset, this_clock) -> {       //assumes clock is running at 20ms intervals for now
             int beatCount = (int)this_clock.getNumberTicks();
-            if (clockIntervalLock > 0 && beatCount % clockIntervalLock == clockDelayTicks) {
+            if (clockIntervalLock > 0 && beatCount % clockIntervalLock == (clockDelayTicks % clockIntervalLock)) {
                 triggerBeat(beatCount);
             }
             triggerTick();
@@ -77,30 +78,44 @@ public class GenericSampleAndClockRenderer extends Renderer {
         pitch = new Glide(1);
         gsp = new GranularSamplePlayer(1);
         sp = new SamplePlayer(1);
-        setSample(0);
         gsp.setKillOnEnd(false);
         gsp.setInterpolationType(SamplePlayer.InterpolationType.LINEAR);
         gsp.setLoopType(SamplePlayer.LoopType.NO_LOOP_FORWARDS);
-        gsp.getGrainSizeUGen().setValue(100);
-        gsp.getRandomnessUGen().setValue(0.1f);
+        gsp.getGrainIntervalUGen().setValue(60);
+        grainInterval = 60;
+        gsp.getGrainSizeUGen().setValue(80);
+        gsp.getRandomnessUGen().setValue(0.01f);
         gsp.setPitch(pitch);
         sp.setKillOnEnd(false);
+        sp.setLoopCrossFade(2);
         sp.setInterpolationType(SamplePlayer.InterpolationType.LINEAR);
         sp.setLoopType(SamplePlayer.LoopType.NO_LOOP_FORWARDS);
         sp.setPitch(pitch);
+        bf = new BiquadFilter(1, BiquadFilter.Type.NOTCH);
+        bf.addInput(sp);
+        fmModulator = new WavePlayer(0, Buffer.SINE);
+        Function f = new Function(fmModulator, pitch) {
+            @Override
+            public float calculate() {
+                return x[0] * fmDepth * x[1] + x[1];
+            }
+        };
+        fm = new WavePlayer(f, Buffer.SINE);
         //set up a clock
         rc.addClockTickListener((offset, this_clock) -> {       //assumes clock is running at 20ms intervals for now
             int beatCount = (int)this_clock.getNumberTicks();
-            if (clockIntervalLock > 0 && beatCount % clockIntervalLock == clockDelayTicks) {
+            if (clockIntervalLock > 0 && beatCount % clockIntervalLock == (clockDelayTicks % clockIntervalLock)) {
                 triggerBeat(beatCount);
             }
+            triggerTick();
         });
         gain = new Glide(0);
-        g = new Gain(1, gain);
-        useGranular(true);
-        out.addInput(g);
+        g = new Gain(1, gain);              //TODO add a Function that can listen to the audio power? Would that work?
+        useGranularSamplePlayer();
+        theActualOut = out;
+        theActualOut.addInput(g);
         //lfo stuff
-        lfoDepth = 1;
+        lfoDepth = 0;
         lfo = new WavePlayer(50, Buffer.SINE);
     }
 
@@ -113,8 +128,8 @@ public class GenericSampleAndClockRenderer extends Renderer {
 
     public void triggerTick() {
         lightUpdate();
-        timeout++;
-        if(timeout > timeoutThresh) {
+        timeoutCount++;
+        if(timeoutThresh >= 0 && timeoutCount > timeoutThresh) {
             if(audioIsSetup) {
                 gain.setValue(0);
             }
@@ -131,13 +146,13 @@ public class GenericSampleAndClockRenderer extends Renderer {
         //decay
         masterBrightness *= decay;
         //sparkle
-        sparkleD[0] = Math.random() * 255;
-        sparkleD[1] = Math.random() * 255;
-        sparkleD[2] = Math.random() * 255;
+        sparkleD[0] = Math.random() * 512 - 256;
+        sparkleD[1] = Math.random() * 512 - 256;
+        sparkleD[2] = Math.random() * 512 - 256;
         rc.displayColor(this,
-                (int)clip((rgbD[0] + sparkle * sparkleD[0] * masterBrightness), 0, 255),
-                (int)clip((rgbD[1] + sparkle * sparkleD[1] * masterBrightness), 0, 255),
-                (int) clip((rgbD[2] + sparkle * sparkleD[2] * masterBrightness), 0, 255)
+                (int)clip(((rgbD[0] + sparkle * sparkleD[0]) * masterBrightness), 0, 255),
+                (int)clip(((rgbD[1] + sparkle * sparkleD[1]) * masterBrightness), 0, 255),
+                (int)clip(((rgbD[2] + sparkle * sparkleD[2]) * masterBrightness), 0, 255)
         );
     }
 
@@ -145,40 +160,48 @@ public class GenericSampleAndClockRenderer extends Renderer {
         rgbD[0] = r;
         rgbD[1] = g;
         rgbD[2] = b;
-
     }
 
     //audio controls
 
-    public static void addSample(String samplename) {
-        Sample sample = SampleManager.sample(samplename);
-        if(sample != null) {
-            samples.add(sample);
-            System.out.println("Sample index: " + (samples.size() - 1) + ": " + samplename);
-        } else {
-            System.out.println("ERROR: there was a problem loading sample: " + samplename);
-        }
-    }
-
-    public void useGranular(boolean yes) {
+    public void useGranularSamplePlayer() {
         if(audioIsSetup) {
-            useGranular = yes;
             g.clearInputConnections();
-            if (yes) {
-                g.addInput(gsp);
-            } else {
-                g.addInput(sp);
-            }
+            g.addInput(gsp);
         }
     }
 
-    public void setSample(int index) {
-        if(gsp != null && samples.size() > index) {
-            gsp.setSample(samples.get(index));
-            sp.setSample(samples.get(index));
-            currentSample = index;
+    public void useRegularSamplePlayer() {
+        if(audioIsSetup) {
+            g.clearInputConnections();
+            g.addInput(bf);
         }
-        timeout = 0;
+    }
+
+    public void useFMSynth() {
+        if(audioIsSetup) {
+            g.clearInputConnections();
+            g.addInput(fm);
+        }
+    }
+
+    public void useNoAudioSource() {
+        g.clearInputConnections();
+    }
+
+    public void setSample(Sample s) {
+        if(gsp != null) {
+            gsp.setSample(s);
+            sp.setSample(s);
+        }
+    }
+
+    public Sample getCurrentSample() {
+        if(gsp != null) {
+            return gsp.getSample();
+        } else {
+            return null;
+        }
     }
 
     public void rate(float rate) {
@@ -186,43 +209,37 @@ public class GenericSampleAndClockRenderer extends Renderer {
             gsp.getRateUGen().setValue(rate);
             sp.getRateUGen().setValue(rate);
         }
-        timeout = 0;
     }
 
     public void grainOverlap(float overlap) {
         if(audioIsSetup) {
-            float interval = gsp.getGrainIntervalUGen().getValue();
-            gsp.getGrainSizeUGen().setValue(interval * overlap);
+            gsp.getGrainSizeUGen().setValue(grainInterval * overlap);
         }
-        timeout = 0;
     }
 
     public void grainInterval(float interval) {
         if(audioIsSetup) {
             gsp.getGrainIntervalUGen().setValue(interval);
+            grainInterval = interval;
         }
-        timeout = 0;
     }
 
     public void gain(float gain) {
         if(audioIsSetup) {
             this.gain.setValue(gain);
         }
-        timeout = 0;
     }
 
     public void random(float random) {
         if(audioIsSetup) {
             gsp.getRandomnessUGen().setValue(random);
         }
-        timeout = 0;
     }
 
-    public void pitch(float pitch) {
+    public void pitch(float pitchd) {
         if(audioIsSetup) {
-            this.pitch.setValue(pitch);
+            this.pitch.setValue(pitchd);
         }
-        timeout = 0;
     }
 
     public void loopType(SamplePlayer.LoopType type) {
@@ -230,31 +247,28 @@ public class GenericSampleAndClockRenderer extends Renderer {
             gsp.setLoopType(type);
             sp.setLoopType(type);
         }
-        timeout = 0;
     }
 
     public void loopStart(float start) {
         if(audioIsSetup) {
             gsp.getLoopStartUGen().setValue(start);
+            sp.getLoopStartUGen().setValue(start);
         }
-        timeout = 0;
     }
 
     public void loopEnd(float end) {
         if(audioIsSetup) {
             gsp.getLoopEndUGen().setValue(end);
+            sp.getLoopEndUGen().setValue(end);
         }
-        timeout = 0;
     }
 
     public void clockInterval(int interval) {
         clockIntervalLock = interval;
-        timeout = 0;
     }
 
-    public void clockDelay(float delayTicks) {
+    public void clockDelay(int delayTicks) {
         clockDelayTicks = delayTicks;
-        timeout = 0;
     }
 
     public void clockLockPosition(float positionMS) {
@@ -265,19 +279,16 @@ public class GenericSampleAndClockRenderer extends Renderer {
         if(audioIsSetup) {
             lfo.setFrequency(freq);
         }
-        timeout = 0;
     }
 
     public void lfoDepth(float depth) {
         lfoDepth = depth;
-        timeout = 0;
     }
 
     public void lfoWave(Buffer wave) {
         if(audioIsSetup) {
             lfo.setBuffer(wave);
         }
-        timeout = 0;
     }
 
     public void position(double ms) {
@@ -285,27 +296,54 @@ public class GenericSampleAndClockRenderer extends Renderer {
             gsp.setPosition(ms);
             sp.setPosition(ms);
         }
-        timeout = 0;
+    }
+
+    public void filterFreq(float freq) {
+        bf.setFrequency(freq);
+    }
+
+    public void filterQ(float q) {
+        bf.setQ(q);
+    }
+
+    public void filterGain(float gain) {
+        bf.setGain(gain);
+    }
+
+    public void filterType(BiquadFilter.Type type) {
+        bf.setType(type);
+    }
+
+    public void fmModDepth(float modDepth) {
+        this.fmDepth = modDepth;
+    }
+
+    public void fmModFreq(float freq) {
+        fmModulator.setFrequency(freq);
+    }
+
+    public void fmCarrierWave(Buffer wave) {
+        fm.setBuffer(wave);
+    }
+
+    public void fmModWave(Buffer wave) {
+        fmModulator.setBuffer(wave);
     }
 
     public void brightness(float brightness) {
         this.masterBrightness = brightness;
-        timeout = 0;
     }
 
     public void pulseBrightness(float pulseBrightness) {
         this.pulseBrightness = pulseBrightness;
-        timeout = 0;
     }
 
     public void decay(float decay) {
         this.decay = decay;
-        timeout = 0;
     }
 
     public void sparkle(float sparkle) {
         this.sparkle = sparkle;
-        timeout = 0;
     }
 
     public void quiet() {
@@ -324,24 +362,42 @@ public class GenericSampleAndClockRenderer extends Renderer {
         if(audioIsSetup) {
             //the LFO is multiplied to the combined signal of the GSP and SP.
             clearLFO();
-            out.clearInputConnections();
-            Function f = new Function(lfo, g) {
+            theActualOut.clearInputConnections();
+            Function f = new Function(lfo, g, gain) {
                 @Override
                 public float calculate() {
-                    return (1 - x[0] * lfoDepth) * x[1];
+                    float lfo = x[0];
+                    float input = x[1];
+                    float theGain = x[2];
+                    float output = 0;
+                    if(lfoDepth > 1) lfoDepth = 1; else if(lfoDepth < 0) lfoDepth = 0;
+                    if(lfoDepth < 0.5f) {
+                        float ldepthTemp = lfoDepth * 2;
+                        output = (1 - ldepthTemp + (lfo * ldepthTemp * theGain)) * input;
+                    } else {
+                        float ldepthTemp = 1f - (lfoDepth - 0.5f) * 2;
+                        output = (1 - ldepthTemp + (input * ldepthTemp * theGain)) * lfo;
+                    }
+                    return Math.max(-1, Math.min(1, output));
                 }
             };
-            out.addInput(f);
+            theActualOut.addInput(f);
         }
-        timeout = 0;
     }
 
     public void clearLFO() {
         if(audioIsSetup) {
-            out.clearInputConnections();
-            out.addInput(g);
+            theActualOut.clearInputConnections();
+            theActualOut.addInput(g);
         }
-        timeout = 0;
+    }
+
+    public void setTimeoutThresh(int thresh) {
+        this.timeoutThresh = thresh;
+    }
+
+    public void resetTimeout() {
+        this.timeoutCount = 0;
     }
 
     public long timeSinceLastTriggerMS() {

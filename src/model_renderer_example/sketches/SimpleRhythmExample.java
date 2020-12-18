@@ -3,6 +3,7 @@ package model_renderer_example.sketches;
 import de.sciss.net.OSCListener;
 import de.sciss.net.OSCMessage;
 import model_renderer_example.renderers.GenericSampleAndClockRenderer;
+import net.beadsproject.beads.data.SampleManager;
 import net.happybrackets.core.HBAction;
 import net.happybrackets.core.control.ControlScope;
 import net.happybrackets.core.control.DynamicControl;
@@ -77,16 +78,9 @@ public class SimpleRhythmExample implements HBAction {
     public void action(HB hb) {
         this.hb = hb;
         hb.reset(); //Clears any running code on the device
-        hb.reset(); //Clears any running code on the device
         rc.reset();
         rc.getInternalClock().setInterval(50);
         //adding some samples
-        GenericSampleAndClockRenderer.samples.clear();
-        GenericSampleAndClockRenderer.addSample("data/audio/Nylon_Guitar/Clean_A_harm.wav");
-        GenericSampleAndClockRenderer.addSample("data/audio/Nylon_Guitar/Clean_B_harm.wav");
-        GenericSampleAndClockRenderer.addSample("data/audio/Nylon_Guitar/Clean_D_harm.wav");
-        GenericSampleAndClockRenderer.addSample("data/audio/Nylon_Guitar/Clean_E_harm.wav");
-        GenericSampleAndClockRenderer.addSample("data/audio/Nylon_Guitar/Clean_G_harm.wav");
         //set up the RC
         rc.setRendererClass(GenericSampleAndClockRenderer.class);
         //set up the configuration of the system
@@ -95,10 +89,10 @@ public class SimpleRhythmExample implements HBAction {
         rc.renderers.forEach(renderer -> {
             GenericSampleAndClockRenderer r = (GenericSampleAndClockRenderer)renderer;
             r.gain(1);
-            r.setSample(hb.rng.nextInt(5));
+            r.setSample(SampleManager.sample("data/audio/Nylon_Guitar/Clean_G_harm.wav"));
             r.clockInterval(20);
             r.clockDelay(0);
-            r.useGranular(false);
+            r.useGranularSamplePlayer();
         });
         //control to change the phase
         FloatControl floatControl = new FloatControl(this, "phase difference", 0) {
