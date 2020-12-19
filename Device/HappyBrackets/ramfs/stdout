@@ -1,109 +1,115 @@
-08:25:07,603 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@23202c31 - Added status listener of type [ch.qos.logback.core.status.OnConsoleStatusListener]
-08:25:07,639 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@23202c31 - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
-08:25:07,640 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@23202c31 - Naming appender as [STDOUT]
-08:25:07,721 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@23202c31 - Setting level of logger [ROOT] to ERROR
-08:25:07,727 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@23202c31 - Attaching appender named [STDOUT] to Logger[ROOT]
+10:19:26,354 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@26f7cdf8 - Added status listener of type [ch.qos.logback.core.status.OnConsoleStatusListener]
+10:19:26,435 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@26f7cdf8 - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+10:19:26,444 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@26f7cdf8 - Naming appender as [STDOUT]
+10:19:26,678 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@26f7cdf8 - Setting level of logger [ROOT] to ERROR
+10:19:26,695 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@26f7cdf8 - Attaching appender named [STDOUT] to Logger[ROOT]
 ************************************************************
 ************************************************************
 ************************************************************
-***            HappyBrackets Version 4.10.8.0            ***
+***           HappyBrackets Version 4.13.10.8            ***
 ***                Beads Version 2.0.3.0                 ***
 ************************************************************
 ************************************************************
 ************************************************************
 Detected SIMULATOR
 Setting config file to config/device-config.json
+************************************************************
+
+java version "13" 2019-09-17
+Java(TM) SE Runtime Environment (build 13+33)
+Java HotSpot(TM) 64-Bit Server VM (build 13+33, mixed mode, sharing)
+
+************************************************************
 Opened secondary controller discovery port on 2229
 Beads System Buffer size=1024
-.Local controllerOscServer Port 49705
-....Look for data/classes/Angelos-MacBook-Pro.local-startup.txt
+.Local controllerOscServer Port 64778
+....net.beadsproject.beads.core.AudioContext@1702830d
+HB Status: ID -2
+Version sent 4.13.10 to port /10.248.31.11:63625 63625
+/Users/ollie/git/HBModelRendererExample/Device/HappyBrackets
+Name sent 4.13.10 to port /10.248.31.11:63625 63625
+Look for data/classes/hoot.local-startup.txt
 Device specific startup file not found
 Look for data/classes/startup.txt
+Version sent 4.13.10 to port /10.248.31.11:63625 63625
+/Users/ollie/git/HBModelRendererExample/Device/HappyBrackets
+Name sent 4.13.10 to port /10.248.31.11:63625 63625
+HB Status: ID -2
 Beads Output buffer size=8192
-HB Status: ID 4
-Version sent 4.10.8 to port /10.0.1.137:59180 59180
-/Users/angelofraietta/Documents/HappyBrackets/Distribution/HappyBrackets Developer Kit/HappyBrackets Project/Device/HappyBrackets
-Name sent 4.10.8 to port /10.0.1.137:59180 59180
-Version sent 4.10.8 to port /10.0.1.137:59180 59180
-/Users/angelofraietta/Documents/HappyBrackets/Distribution/HappyBrackets Developer Kit/HappyBrackets Project/Device/HappyBrackets
-Name sent 4.10.8 to port /10.0.1.137:59180 59180
-Version sent 4.10.8 to port /10.0.1.137:59180 59180
-/Users/angelofraietta/Documents/HappyBrackets/Distribution/HappyBrackets Developer Kit/HappyBrackets Project/Device/HappyBrackets
-************************************************************
-
-java version "13.0.2" 2020-01-14
-Java(TM) SE Runtime Environment (build 13.0.2+8)
-Java HotSpot(TM) 64-Bit Server VM (build 13.0.2+8, mixed mode, sharing)
-
-************************************************************
-Name sent 4.10.8 to port /10.0.1.137:59180 59180
-Version sent 4.10.8 to port /10.0.1.137:59180 59180
-/Users/angelofraietta/Documents/HappyBrackets/Distribution/HappyBrackets Developer Kit/HappyBrackets Project/Device/HappyBrackets
-Name sent 4.10.8 to port /10.0.1.137:59180 59180
-Version sent 4.10.8 to port /10.0.1.137:59180 59180
-/Users/angelofraietta/Documents/HappyBrackets/Distribution/HappyBrackets Developer Kit/HappyBrackets Project/Device/HappyBrackets
-HB Status: ID 4
-Name sent 4.10.8 to port /10.0.1.137:59180 59180
-Version sent 4.10.8 to tcp /127.0.0.1
-/Users/angelofraietta/Documents/HappyBrackets/Distribution/HappyBrackets Developer Kit/HappyBrackets Project/Device/HappyBrackets
-Version sent 4.10.8 to port /10.0.1.137:59180 59180
-/Users/angelofraietta/Documents/HappyBrackets/Distribution/HappyBrackets Developer Kit/HappyBrackets Project/Device/HappyBrackets
-Name sent 4.10.8 to tcp 
-Name sent 4.10.8 to port /10.0.1.137:59180 59180
-Version sent 4.10.8 to port /10.0.1.137:59180 59180
-/Users/angelofraietta/Documents/HappyBrackets/Distribution/HappyBrackets Developer Kit/HappyBrackets Project/Device/HappyBrackets
-Name sent 4.10.8 to port /10.0.1.137:59180 59180
-Gain changed to : 0.09286621
-Gain changed to : 0.09286621
-Gain changed to : 0.09286621
-HB Status: ID 4
-HB Status: ID 4
-Version sent 4.10.8 to tcp /127.0.0.1
-/Users/angelofraietta/Documents/HappyBrackets/Distribution/HappyBrackets Developer Kit/HappyBrackets Project/Device/HappyBrackets
-Name sent 4.10.8 to tcp 
-Version sent 4.10.8 to tcp /127.0.0.1
-/Users/angelofraietta/Documents/HappyBrackets/Distribution/HappyBrackets Developer Kit/HappyBrackets Project/Device/HappyBrackets
-Name sent 4.10.8 to tcp 
-Gain changed to : 0.16252607
-Gain changed to : 0.16252607
-Gain changed to : 0.16252607
-Gain changed to : 0.16717006
-Gain changed to : 0.16717006
-Gain changed to : 0.16717006
+Version sent 4.13.10 to port /10.248.31.11:63625 63625
+/Users/ollie/git/HBModelRendererExample/Device/HappyBrackets
+Name sent 4.13.10 to port /10.248.31.11:63625 63625
+Version sent 4.13.10 to port /10.248.31.11:63625 63625
+/Users/ollie/git/HBModelRendererExample/Device/HappyBrackets
+Name sent 4.13.10 to port /10.248.31.11:63625 63625
+HB Status: ID -2
+Version sent 4.13.10 to port /127.0.0.1:63625 63625
+/Users/ollie/git/HBModelRendererExample/Device/HappyBrackets
+Name sent 4.13.10 to port /127.0.0.1:63625 63625
+HB Status: ID -2
+HB Status: ID -2
+Version sent 4.13.10 to port /10.248.31.11:63625 63625
+/Users/ollie/git/HBModelRendererExample/Device/HappyBrackets
+Name sent 4.13.10 to port /10.248.31.11:63625 63625
+Version sent 4.13.10 to port /10.248.31.11:63625 63625
+/Users/ollie/git/HBModelRendererExample/Device/HappyBrackets
+Name sent 4.13.10 to port /10.248.31.11:63625 63625
 HB Status: Received class load request
 HB Status: Loading /
-HB Status: Loading SimpleMIDI
-HB Status: Reset
-HB Status: SimpleMIDI Loaded
-Exception in thread "Thread-14" java.lang.ArrayIndexOutOfBoundsException: 15
-	at javazoom.jl.decoder.LayerIDecoder$SubbandLayer1Stereo.read_allocation(Unknown Source)
-	at javazoom.jl.decoder.LayerIDecoder.readAllocation(Unknown Source)
-	at javazoom.jl.decoder.LayerIDecoder.decodeFrame(Unknown Source)
-	at javazoom.jl.decoder.Decoder.decodeFrame(Unknown Source)
-	at javazoom.spi.mpeg.sampled.convert.DecodedMpegAudioInputStream.execute(Unknown Source)
-	at org.tritonus.share.TCircularBuffer.read(TCircularBuffer.java:134)
-	at org.tritonus.share.sampled.convert.TAsynchronousFilteredAudioInputStream.read(TAsynchronousFilteredAudioInputStream.java:189)
-	at com.sun.media.sound.AudioFloatInputStream$DirectAudioFloatInputStream.read(AudioFloatInputStream.java:178)
-	at com.sun.media.sound.SoftAbstractResampler$ModelAbstractResamplerStream.nextBuffer(SoftAbstractResampler.java:208)
-	at com.sun.media.sound.SoftAbstractResampler$ModelAbstractResamplerStream.open(SoftAbstractResampler.java:135)
-	at com.sun.media.sound.SoftVoice.processControlLogic(SoftVoice.java:614)
-	at com.sun.media.sound.SoftMainMixer.processAudioBuffers(SoftMainMixer.java:505)
-	at com.sun.media.sound.SoftMainMixer$2.fillBuffer(SoftMainMixer.java:880)
-	at com.sun.media.sound.SoftMainMixer$2.read(SoftMainMixer.java:893)
-	at javax.sound.sampled.AudioInputStream.read(AudioInputStream.java:292)
-	at com.sun.media.sound.SoftSynthesizer$WeakAudioStream.read(SoftSynthesizer.java:108)
-	at javax.sound.sampled.AudioInputStream.read(AudioInputStream.java:292)
-	at com.sun.media.sound.SoftJitterCorrector$JitterStream$1.run(SoftJitterCorrector.java:186)
-	at java.lang.Thread.run(Thread.java:748)
-HB Status: Reset
 HB Status: Received class load request
 HB Status: Loading -
+HB Status: Loading ExampleForASUFolksMYFIRSTEXPERIMENT
+HB Status: Reset
+Dec 19, 2020 10:19:47 AM com.pi4j.util.NativeLibraryLoader load
+SEVERE: Unable to load [libpi4j.so] using path: [/lib/raspberrypi/dynamic/libpi4j.so]
+java.lang.UnsatisfiedLinkError: /private/var/folders/cw/vm5j6jts16dgfzldzgjbbx740000gp/T/libpi4j6372548009392452675.so: dlopen(/private/var/folders/cw/vm5j6jts16dgfzldzgjbbx740000gp/T/libpi4j6372548009392452675.so, 1): no suitable image found.  Did find:
+	/private/var/folders/cw/vm5j6jts16dgfzldzgjbbx740000gp/T/libpi4j6372548009392452675.so: unknown file type, first eight bytes: 0x7F 0x45 0x4C 0x46 0x01 0x01 0x01 0x00
+	/private/var/folders/cw/vm5j6jts16dgfzldzgjbbx740000gp/T/libpi4j6372548009392452675.so: unknown file type, first eight bytes: 0x7F 0x45 0x4C 0x46 0x01 0x01 0x01 0x00
+	at java.lang.ClassLoader$NativeLibrary.load(Native Method)
+	at java.lang.ClassLoader.loadLibrary0(ClassLoader.java:1941)
+	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1824)
+	at java.lang.Runtime.load0(Runtime.java:809)
+	at java.lang.System.load(System.java:1086)
+	at com.pi4j.util.NativeLibraryLoader.loadLibraryFromClasspath(NativeLibraryLoader.java:159)
+	at com.pi4j.util.NativeLibraryLoader.load(NativeLibraryLoader.java:105)
+	at com.pi4j.jni.Serial.<clinit>(Serial.java:101)
+	at com.pi4j.io.serial.Baud.<clinit>(Baud.java:36)
+	at com.pi4j.io.serial.SerialConfig.<init>(SerialConfig.java:35)
+	at net.happybrackets.sychronisedmodel.RendererController.enableSerial(RendererController.java:142)
+	at net.happybrackets.sychronisedmodel.RendererController.addRenderer(RendererController.java:127)
+	at model_renderer_example.sketches.ExampleForASUFolksMYFIRSTEXPERIMENT.action(ExampleForASUFolksMYFIRSTEXPERIMENT.java:42)
+	at net.happybrackets.device.HB$3.run(HB.java:1222)
+
+ ==>> SERIAL SETUP FAILED : com.pi4j.jni.Serial.open(Ljava/lang/String;IIIII)I
+ ==>> SERIAL SETUP FAILED : com.pi4j.jni.Serial.open(Ljava/lang/String;IIIII)I
+ ==>> SERIAL SETUP FAILED : com.pi4j.jni.Serial.open(Ljava/lang/String;IIIII)I
+ ==>> SERIAL SETUP FAILED : com.pi4j.jni.Serial.open(Ljava/lang/String;IIIII)I
+net.beadsproject.beads.core.AudioContext@1702830d
+net.beadsproject.beads.core.AudioContext@1702830d
+net.beadsproject.beads.core.AudioContext@1702830d
+net.beadsproject.beads.core.AudioContext@1702830d
+net.beadsproject.beads.core.AudioContext@1702830d
+net.beadsproject.beads.core.AudioContext@1702830d
+HB Status: hoot.local, I Have 6 objects
+Sample loaded data/audio/Mattel_Drum_Machine/MatBd.wav
+Interval exceeded
+HB Status: Reset
 HB Status: Received class load request
 HB Status: Loading \
-Exception in thread "Thread-7" java.lang.LinkageError: loader (instance of  net/happybrackets/device/dynamic/DynamicClassLoader): attempted  duplicate class definition for name: "MidiPlay"
-	at java.lang.ClassLoader.defineClass1(Native Method)
-	at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
-	at java.lang.ClassLoader.defineClass(ClassLoader.java:642)
-	at net.happybrackets.device.dynamic.DynamicClassLoader.createNewClass(DynamicClassLoader.java:31)
-	at net.happybrackets.device.HB$3.run(HB.java:1139)
+HB Status: Received class load request
+HB Status: Loading |
+HB Status: Loading ExampleForASUFolksMYFIRSTEXPERIMENT
 HB Status: Reset
+ ==>> SERIAL SETUP FAILED : com.pi4j.jni.Serial.open(Ljava/lang/String;IIIII)I
+ ==>> SERIAL SETUP FAILED : com.pi4j.jni.Serial.open(Ljava/lang/String;IIIII)I
+ ==>> SERIAL SETUP FAILED : com.pi4j.jni.Serial.open(Ljava/lang/String;IIIII)I
+ ==>> SERIAL SETUP FAILED : com.pi4j.jni.Serial.open(Ljava/lang/String;IIIII)I
+net.beadsproject.beads.core.AudioContext@1702830d
+net.beadsproject.beads.core.AudioContext@1702830d
+net.beadsproject.beads.core.AudioContext@1702830d
+net.beadsproject.beads.core.AudioContext@1702830d
+net.beadsproject.beads.core.AudioContext@1702830d
+net.beadsproject.beads.core.AudioContext@1702830d
+HB Status: hoot.local, I Have 6 objects
+HB Status: Reset
+Shutdown Simulator

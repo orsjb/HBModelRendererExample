@@ -23,40 +23,40 @@ public class GenericSampleAndClockRenderer extends Renderer {
     RendererController rc = RendererController.getInstance();
 
     //audio objects
-    GranularSamplePlayer gsp;
-    SamplePlayer sp;
-    float grainInterval;
-    Gain g;
-    WavePlayer fmModulator;
-    WavePlayer fm;
-    BiquadFilter bf;
-    UGen theActualOut;
-    float fmDepth = 0;
+    public GranularSamplePlayer gsp;
+    public SamplePlayer sp;
+    public float grainInterval;
+    public Gain g;
+    public WavePlayer fmModulator;
+    public WavePlayer fm;
+    public BiquadFilter bf;
+    public UGen theActualOut;
+    public float fmDepth = 0;
 
     //lfo
-    WavePlayer lfo;
-    float lfoDepth;
+    public WavePlayer lfo;
+    public float lfoDepth;
 
     //audio controls
-    Glide gain;
-    Glide pitch;
+    public Glide gain;
+    public Glide pitch;
 
     //other timing params
-    int clockIntervalLock = 0;
-    double clockLockPosition = 0;
-    int clockDelayTicks = 0;
+    public int clockIntervalLock = 0;
+    public double clockLockPosition = 0;
+    public int clockDelayTicks = 0;
 
     //light data
     private double[] sparkleD = new double[]{0, 0, 0};
-    double[] rgbD = new double[]{255, 255, 255};
-    double masterBrightness = 0;
-    double pulseBrightness = 1;
-    double decay = 0.7f;
-    double sparkle = 0;
+    public double[] rgbD = new double[]{255, 255, 255};
+    public double masterBrightness = 0;
+    public double pulseBrightness = 1;
+    public double decay = 0.7f;
+    public double sparkle = 0;
 
     //id for tracking event objects
-    int timeoutThresh = -1;
-    int timeoutCount = 0;
+    public int timeoutThresh = -1;
+    public int timeoutCount = 0;
     boolean audioIsSetup = false;
     long timeOfLastTriggerMS = 0;
 

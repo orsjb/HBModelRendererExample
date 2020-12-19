@@ -3,6 +3,7 @@ package model_renderer_example.sketches;
 import de.sciss.net.OSCListener;
 import de.sciss.net.OSCMessage;
 import model_renderer_example.renderers.GenericSampleAndClockRenderer;
+import net.beadsproject.beads.data.SampleManager;
 import net.happybrackets.core.Device;
 import net.happybrackets.core.HBAction;
 import net.happybrackets.core.HBReset;
@@ -15,7 +16,7 @@ import java.net.SocketAddress;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ExampleForASUFolksBLANK implements HBAction, HBReset {
+public class ExampleForASUFolksMYFIRSTEXPERIMENT implements HBAction, HBReset {
 
     RendererController rc = RendererController.getInstance();
     HB hb;
@@ -38,7 +39,7 @@ public class ExampleForASUFolksBLANK implements HBAction, HBReset {
         //set up the configuration of the system
         //rc.loadHardwareConfiguration("config/hardware_setup_casula_iml_test.csv");
         String hostname = Device.getDeviceName();
-        rc.addRenderer(Renderer.Type.LIGHT, hostname,   0,  100f, 0, "LED-W", 0, 16);
+        rc.addRenderer(Renderer.Type.LIGHT, hostname,   450,  200f, 450, "LED-W", 0, 16);
         rc.addRenderer(Renderer.Type.LIGHT, hostname,   0, 100f, 0,  "LED-N", 1, 16);
         rc.addRenderer(Renderer.Type.LIGHT, hostname,   0, 100f, 0,  "LED-S", 2, 16);
         rc.addRenderer(Renderer.Type.LIGHT, hostname,   0, 100f, 0,  "LED-E", 3, 16);
@@ -51,6 +52,19 @@ public class ExampleForASUFolksBLANK implements HBAction, HBReset {
         //some basic configuration
         renderers.forEach(r -> {
             //DO SET UP HERE
+            if(r.x < 10 && r.y > 50) {
+                r.useGranularSamplePlayer();
+                r.clockInterval(20);        //this is measured in ticks
+                r.setSample(SampleManager.sample("data/audio/Mattel_Drum_Machine/MatBd.wav"));
+                r.clockDelay((int)r.x / 10 );    //this is measured in ticks
+                r.gain(1f - r.x / 450);
+            } else {
+
+                r.useGranularSamplePlayer();
+                r.clockInterval(20);
+                r.setSample(SampleManager.sample("data/audio/Mattel_Drum_Machine/MatBd.wav"));
+                r.gain(1);
+            }
         });
 
         rc.addClockTickListener((v, clock) -> {

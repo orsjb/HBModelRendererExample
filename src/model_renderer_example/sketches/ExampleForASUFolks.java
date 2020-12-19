@@ -27,6 +27,9 @@ public class ExampleForASUFolks implements HBAction, HBReset {
     List<GenericSampleAndClockRenderer> renderers = new ArrayList();
     Map<GenericSampleAndClockRenderer, Integer> rendererIDs = new HashMap<>();
 
+    int INSTALL_WIDTH = 450; //cm
+    int INSTALL_HEIGHT = 200; //cm
+
     int count = 0;
 
     @Override
@@ -42,9 +45,9 @@ public class ExampleForASUFolks implements HBAction, HBReset {
         //set up the RC
         rc.setRendererClass(GenericSampleAndClockRenderer.class);
         //set up the configuration of the system
-//        rc.loadHardwareConfiguration("config/hardware_setup_casula_iml.csv");
+        //rc.loadHardwareConfiguration("config/hardware_setup_casula_iml.csv");
         String hostname = Device.getDeviceName();
-        rc.addRenderer(Renderer.Type.LIGHT, hostname,   450,  200f, 450, "LED-W", 0, 16);
+        rc.addRenderer(Renderer.Type.LIGHT, hostname,   INSTALL_WIDTH,  INSTALL_HEIGHT, INSTALL_WIDTH, "LED-W", 0, 16);
         rc.addRenderer(Renderer.Type.LIGHT, hostname,   50, 100f, 0,  "LED-N", 1, 16);
         rc.addRenderer(Renderer.Type.LIGHT, hostname,   50, 100f, 0,  "LED-S", 2, 16 );
         rc.addRenderer(Renderer.Type.LIGHT, hostname,   0, 100f, 0,  "LED-E", 3, 16);
