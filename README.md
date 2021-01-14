@@ -139,10 +139,10 @@ You can browse this GitHub repository to see examples of Renderer class and sket
 [Watch this video](https://www.youtube.com/watch?v=h_xj5PdrtgU) to learn how to create start with HappyBrackets
 
 
-###Unity Simulator
+### Unity Simulator:
 Tutorial videos [here](https://drive.google.com/drive/folders/1KwE97ASManrqIXJ4T6D2xpfxX3sDE2vw?usp=sharing)
 
-steps:
+#### steps:
 Use this version of this HB project
 https://github.com/orsjb/HBModelRendererExample
 
