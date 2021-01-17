@@ -151,17 +151,17 @@ https://unity3d.com/get-unity/download
 
 Download the-mind-at-work-unity repo 
 https://github.com/gutosantos82/The-Mind-at-Work-Unity
-You can download it as a zip and extract it somewhere you can find it
+You can download it as a zip and extract it somewhere you can find it.
 
 Run unity hub and make sure you're signed in.
 
-Add the the-mind-at-work-unity repo 
-Download the correct editor from the warning prompt
-Go the Assets>Scenes in the project panel, drag and drop SampleScene to the scenes panel
-Delete the default untitled scene in the scenes panel
+Add the the-mind-at-work-unity repo.
+Download the correct editor from the warning prompt.
+Go the Assets>Scenes in the project panel, drag and drop SampleScene to the scenes panel.
+Delete the default untitled scene in the scenes panel.
 
-Open intelliJ
-Run simulator from the HappyBrackets menu
-Recompile and send the OrbitExample to the simulator
+Open intelliJ and run simulator from the HappyBrackets menu.
+Recompile and send the OrbitExample to the simulator.
 
-There are some sliders here to see how things work. Double click your machine name in the HappyBrackets Plugin window to see them. You can also control these parameters with OSC messages from Max/MSP or something if you like.
+There are some sliders here to see how things work. Double click your machine name in the HappyBrackets Plugin window to see them. 
+You can also control these parameters with OSC messages from Max/MSP or something if you like.
