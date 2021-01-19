@@ -142,7 +142,7 @@ You can browse this GitHub repository to see examples of Renderer class and sket
 ### Unity Simulator:
 Tutorial videos [here](https://drive.google.com/drive/folders/1KwE97ASManrqIXJ4T6D2xpfxX3sDE2vw?usp=sharing)
 
-#### steps:
+#### How to:
 Use this version of this HB project
 https://github.com/orsjb/HBModelRendererExample
 
@@ -157,8 +157,8 @@ Run unity hub and make sure you're signed in.
 
 Add the the-mind-at-work-unity repo.
 Download the correct editor from the warning prompt.
-Go the Assets>Scenes in the project panel, drag and drop SampleScene to the scenes panel.
-Delete the default untitled scene in the scenes panel.
+Go to Assets>Scenes in the project panel, drag and drop SampleScene to the heirarchy panel.
+Delete the default untitled scene in the heirarchy panel.
 
 Open intelliJ and run simulator from the HappyBrackets menu.
 Recompile and send the OrbitExample to the simulator.
