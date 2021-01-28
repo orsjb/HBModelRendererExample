@@ -137,3 +137,31 @@ The Renderer magic happens inside your HB sketch, where you write your tick list
 You can browse this GitHub repository to see examples of Renderer class and sketches.
 
 [Watch this video](https://www.youtube.com/watch?v=h_xj5PdrtgU) to learn how to create start with HappyBrackets
+
+
+### Unity Simulator:
+Tutorial videos [here](https://www.youtube.com/watch?v=HlSjCFXMw6k)
+
+#### How to:
+Use this version of this HB project
+https://github.com/orsjb/HBModelRendererExample
+
+Download unity hub and make an account, you don't need to start a project or get a specific editor version yet.
+https://unity3d.com/get-unity/download
+
+Download the-mind-at-work-unity repo 
+https://github.com/gutosantos82/The-Mind-at-Work-Unity
+You can download it as a zip and extract it somewhere you can find it.
+
+Run unity hub and make sure you're signed in.
+
+Add the the-mind-at-work-unity repo.
+Download the correct editor from the warning prompt.
+Go to Assets>Scenes in the project panel, drag and drop SampleScene to the heirarchy panel.
+Delete the default untitled scene in the heirarchy panel.
+
+Open intelliJ and run simulator from the HappyBrackets menu.
+Recompile and send the OrbitExample to the simulator.
+
+There are some sliders here to see how things work. Double click your machine name in the HappyBrackets Plugin window to see them. 
+You can also control these parameters with OSC messages from Max/MSP or something if you like.
