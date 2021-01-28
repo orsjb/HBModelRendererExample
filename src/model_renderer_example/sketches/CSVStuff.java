@@ -17,10 +17,6 @@ import java.net.SocketAddress;
 import java.util.ArrayList;
 import java.util.List;
 
-//This example moves blobs around the Unity simulator in a circular orbit on a 2D plane
-//You can use the internal clock, or an OSC listener
-//The internal clock has Dynamic Controls
-
 public class CSVStuff implements HBAction, HBReset {
 
     RendererController rc = RendererController.getInstance();
