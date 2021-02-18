@@ -1,23 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8ac14a86-6248-4999-beb1-94c7835de615" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/GranularDA1__renderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GranularDA1_custom_renderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JoshEg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JoshEg2Analysis.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/new_outline/ExampleHBBehaviour.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/new_outline/HBBehaviour.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/new_outline/OutputRenderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/new_outline/RendererManager.java" afterDir="false" />
+    <list default="true" id="8ac14a86-6248-4999-beb1-94c7835de615" name="Default" comment="Ollie's examples in &quot;new_outline&quot;">
+      <change afterPath="$PROJECT_DIR$/src/new_outline/ExampleHBBehaviour2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/new_outline/GenericGranularHBRenderer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/model_renderer_example/sketches/HackExperimentQuadrants$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/model_renderer_example/sketches/HackExperimentQuadrants.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/model_renderer_example/sketches/SimpleRhythmExample$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/model_renderer_example/sketches/SimpleRhythmExample$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/production/HBModelRendererExample/model_renderer_example/sketches/SimpleRhythmExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model_renderer_example/sketches/HackExperimentQuadrants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model_renderer_example/sketches/HackExperimentQuadrants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model_renderer_example/sketches/SimpleRhythmExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model_renderer_example/sketches/SimpleRhythmExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/new_outline/ExampleHBBehaviour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/new_outline/ExampleHBBehaviour1.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/build/production/HBModelRendererExample/" />
     <ignored path="$PROJECT_DIR$/build/test/HBModelRendererExample/" />
@@ -56,10 +44,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/new_outline/ExampleHBBehaviour.java">
+        <entry file="file://$PROJECT_DIR$/src/new_outline/ExampleHBBehaviour1.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
-              <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -67,8 +55,29 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/new_outline/HBBehaviour.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="285">
+              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/new_outline/ExampleHBBehaviour2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="68" selection-start-line="4" selection-start-column="68" selection-end-line="4" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/new_outline/GenericGranularHBRenderer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -121,6 +130,8 @@
         <option value="$PROJECT_DIR$/src/new_outline/ExampleHBBehaviour.java" />
         <option value="$PROJECT_DIR$/src/new_outline/RendererManager.java" />
         <option value="$PROJECT_DIR$/src/new_outline/HBBehaviour.java" />
+        <option value="$PROJECT_DIR$/src/new_outline/ExampleHBBehaviour2.java" />
+        <option value="$PROJECT_DIR$/src/new_outline/GenericGranularHBRenderer.java" />
       </list>
     </option>
   </component>
@@ -170,7 +181,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1613689127233" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1613689637898" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -179,18 +190,19 @@
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="" />
-      <recent name="model_renderer_example.sketches" />
-      <recent name="model_renderer_example.renderers" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Device/HappyBrackets/config" />
       <recent name="$PROJECT_DIR$/src/model_renderer_example/sketches" />
       <recent name="$PROJECT_DIR$/Device/HappyBrackets" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="new_outline" />
+      <recent name="" />
+      <recent name="model_renderer_example.sketches" />
+      <recent name="model_renderer_example.renderers" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
@@ -247,13 +259,21 @@
       <option name="presentableId" value="Default" />
       <updated>1517261895548</updated>
     </task>
+    <task id="LOCAL-00001" summary="Ollie's examples in &quot;new_outline&quot;">
+      <created>1613689145206</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1613689145206</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1397" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20442805" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28487086" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24959612" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -268,9 +288,9 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49676898" weight="0.32840723" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50701106" side_tool="true" visible="true" weight="0.06369427" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5092251" side_tool="true" visible="true" weight="0.32738853" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.491404" weight="0.32824427" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4907749" visible="true" weight="0.32738853" />
       <window_info anchor="bottom" id="Problems" order="11" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" sideWeight="0.496063" weight="0.1648" />
@@ -287,6 +307,10 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.sh" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Ollie's examples in &quot;new_outline&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ollie's examples in &quot;new_outline&quot;" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/model_renderer_example/sketches/HackExperimentQuadrants.java">
@@ -412,10 +436,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/new_outline/ExampleHBBehaviour.java">
+    <entry file="file://$PROJECT_DIR$/src/new_outline/ExampleHBBehaviour1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -430,10 +454,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/new_outline/ExampleHBBehaviour2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="68" selection-start-line="4" selection-start-column="68" selection-end-line="4" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/new_outline/GenericGranularHBRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/new_outline/HBBehaviour.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="285">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
