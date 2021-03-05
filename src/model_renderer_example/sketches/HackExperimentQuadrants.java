@@ -26,13 +26,13 @@ public class HackExperimentQuadrants implements HBAction {
 
     void setupDeviceLocations() {
         //TODO you should add new lines for each device and give the device a position
-        //rc.addRenderer(Renderer.Type.SPEAKER, "hb-b827eb999a03",0,0, 0,"hb-b827eb999a03", 0);
+        //rc.addRenderer(OutputRenderer.Type.SPEAKER, "hb-b827eb999a03",0,0, 0,"hb-b827eb999a03", 0);
 
 
         //everything below is for the IML setup
         //we populate a data structure with all of the device positions
         //then below that we grab the positions corresponding to our own hostname
-        //and set up the Renderer with this device name and position.
+        //and set up the OutputRenderer with this device name and position.
         //you probably want to do something similar. Just edit the lines below with the device names
         //and positions of your devices (assumes fixed positions!).
 

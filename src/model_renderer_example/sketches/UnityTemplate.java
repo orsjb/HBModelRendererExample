@@ -18,10 +18,6 @@ import java.net.SocketAddress;
 import java.util.ArrayList;
 import java.util.List;
 
-//This example moves blobs around the Unity simulator in a circular orbit on a 2D plane
-//You can use the internal clock, or an OSC listener
-//The internal clock has Dynamic Controls
-
 public class CSVStuff implements HBAction, HBReset {
 
     RendererController rc = RendererController.getInstance();
@@ -50,11 +46,7 @@ public class CSVStuff implements HBAction, HBReset {
 
         rc.addClockTickListener((v, clock) -> {
             renderers.forEach(r -> {
-                int lightRing = Integer.parseInt(r.csvData.get("lightRing"));
-                if (clock.getNumberTicks() % 30 == lightRing * 5) {
-                    r.brightness(0.8f);
-                    r.decay(0.97f);
-                    r.setRGB(245, 200 / 5 * lightRing, 30   / 5 * lightRing);
+                //write code here
                 }
             });
             rc.sendSerialcommand();
