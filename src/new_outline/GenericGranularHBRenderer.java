@@ -1,14 +1,15 @@
 package new_outline;
 
 import net.beadsproject.beads.ugens.GranularSamplePlayer;
+import net.happybrackets.core.scheduling.Clock;
 import net.happybrackets.device.HB;
 
 public class GenericGranularHBRenderer extends HBBehaviour {
 
     @Override
-    public void setupSound() {
+    public void setupAudio() {
         GranularSamplePlayer gsp = new GranularSamplePlayer(null);
-        out.addInput(gsp);
+        //out.addInput(gsp);
         //etc.
     }
 
@@ -18,7 +19,12 @@ public class GenericGranularHBRenderer extends HBBehaviour {
     }
 
     @Override
-    public void tick() {
+    public void tick(Clock clock) {
         //loop shit here
+    }
+
+    @Override
+    public void action(HB hb) {
+
     }
 }

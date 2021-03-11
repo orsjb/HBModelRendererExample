@@ -1,11 +1,12 @@
 package new_outline;
 
+import net.happybrackets.core.scheduling.Clock;
 import net.happybrackets.device.HB;
 
 public class ExampleHBBehaviour1 extends HBBehaviour {
 
     @Override
-    public void setupSound() {
+    public void setupAudio() {
 
     }
 
@@ -15,7 +16,7 @@ public class ExampleHBBehaviour1 extends HBBehaviour {
     }
 
     @Override
-    public void tick() {
+    public void tick(Clock clock) {
 
     }
 

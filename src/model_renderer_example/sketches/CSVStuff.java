@@ -1,6 +1,7 @@
 package model_renderer_example.sketches;
 
 import de.sciss.net.OSCMessage;
+import model_renderer_example.renderers.GenericSampleAndClockRenderer;
 import net.happybrackets.core.HBAction;
 import net.happybrackets.core.HBReset;
 import net.happybrackets.core.OSCUDPListener;
@@ -9,7 +10,6 @@ import net.happybrackets.core.control.DynamicControl;
 import net.happybrackets.core.control.FloatControl;
 import net.happybrackets.device.HB;
 import net.happybrackets.sychronisedmodel.RendererController;
-import the_mind_at_work.renderers.GenericSampleAndClockRenderer;
 
 import java.lang.invoke.MethodHandles;
 import java.lang.reflect.Method;
