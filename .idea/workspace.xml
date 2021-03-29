@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ac14a86-6248-4999-beb1-94c7835de615" name="Default" comment="Ollie's examples in &quot;new_outline&quot;">
-      <change afterPath="$PROJECT_DIR$/src/new_outline/ExampleHBBehaviour2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/new_outline/GenericGranularHBRenderer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/new_outline/ExampleHBBehaviour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/new_outline/ExampleHBBehaviour1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Device/HappyBrackets/HB.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Device/HappyBrackets/HB.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Device/HappyBrackets/HBVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Device/HappyBrackets/HBVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Device/HappyBrackets/ramfs/stdout" beforeDir="false" afterPath="$PROJECT_DIR$/Device/HappyBrackets/ramfs/stdout" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/new_outline/ExampleHBBehaviour1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/new_outline/ExampleHBBehaviour1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/new_outline/HBBehaviour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/new_outline/HBBehaviour.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/build/production/HBModelRendererExample/" />
     <ignored path="$PROJECT_DIR$/build/test/HBModelRendererExample/" />
@@ -21,23 +23,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/new_outline/OutputRenderer.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/new_outline/HBBehaviour.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/new_outline/RendererManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1050">
-              <caret line="70" column="89" selection-start-line="70" selection-start-column="89" selection-end-line="70" selection-end-column="89" />
+            <state relative-caret-position="1262">
+              <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2806#2807#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -46,40 +38,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/new_outline/ExampleHBBehaviour1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/new_outline/HBBehaviour.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+            <state relative-caret-position="195">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/new_outline/ExampleHBBehaviour2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="68" selection-start-line="4" selection-start-column="68" selection-end-line="4" selection-end-column="68" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/new_outline/GenericGranularHBRenderer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#379#380#0" expanded="true" />
+                <element signature="e#409#410#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -101,6 +65,7 @@
       <find>setRGB</find>
       <find>groupName</find>
       <find>pitch1final</find>
+      <find>HBInstance</find>
     </findStrings>
     <replaceStrings>
       <replace>groupName4</replace>
@@ -128,10 +93,13 @@
         <option value="$PROJECT_DIR$/src/new_outline/Renderer.java" />
         <option value="$PROJECT_DIR$/src/new_outline/OutputRenderer.java" />
         <option value="$PROJECT_DIR$/src/new_outline/ExampleHBBehaviour.java" />
-        <option value="$PROJECT_DIR$/src/new_outline/RendererManager.java" />
-        <option value="$PROJECT_DIR$/src/new_outline/HBBehaviour.java" />
         <option value="$PROJECT_DIR$/src/new_outline/ExampleHBBehaviour2.java" />
+        <option value="$PROJECT_DIR$/src/new_outline/RendererManager.java" />
+        <option value="$PROJECT_DIR$/src/model_renderer_example/sketches/UnityTemplate.java" />
+        <option value="$PROJECT_DIR$/src/model_renderer_example/sketches/CSVStuff.java" />
         <option value="$PROJECT_DIR$/src/new_outline/GenericGranularHBRenderer.java" />
+        <option value="$PROJECT_DIR$/src/new_outline/ExampleHBBehaviour1.java" />
+        <option value="$PROJECT_DIR$/src/new_outline/HBBehaviour.java" />
       </list>
     </option>
   </component>
@@ -141,10 +109,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1397" />
-    <option name="height" value="877" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="833" />
+    <option name="y" value="25" />
+    <option name="width" value="767" />
+    <option name="height" value="875" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -154,7 +123,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -165,7 +133,45 @@
             <path>
               <item name="HBModelRendererExample" type="b2602c69:ProjectViewProjectNode" />
               <item name="HBModelRendererExample" type="462c0819:PsiDirectoryNode" />
+              <item name="Device" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HBModelRendererExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HBModelRendererExample" type="462c0819:PsiDirectoryNode" />
+              <item name="Device" type="462c0819:PsiDirectoryNode" />
+              <item name="HappyBrackets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HBModelRendererExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HBModelRendererExample" type="462c0819:PsiDirectoryNode" />
+              <item name="Device" type="462c0819:PsiDirectoryNode" />
+              <item name="HappyBrackets" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HBModelRendererExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HBModelRendererExample" type="462c0819:PsiDirectoryNode" />
+              <item name="Device" type="462c0819:PsiDirectoryNode" />
+              <item name="HappyBrackets" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HBModelRendererExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HBModelRendererExample" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HBModelRendererExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HBModelRendererExample" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="examples" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HBModelRendererExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HBModelRendererExample" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="examples" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HBModelRendererExample" type="b2602c69:ProjectViewProjectNode" />
@@ -178,10 +184,11 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1613689637898" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1616998046647" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -190,10 +197,7 @@
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Device/HappyBrackets/config" />
-      <recent name="$PROJECT_DIR$/src/model_renderer_example/sketches" />
-      <recent name="$PROJECT_DIR$/Device/HappyBrackets" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -202,7 +206,10 @@
       <recent name="model_renderer_example.sketches" />
       <recent name="model_renderer_example.renderers" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Device/HappyBrackets/config" />
+      <recent name="$PROJECT_DIR$/src/model_renderer_example/sketches" />
+      <recent name="$PROJECT_DIR$/Device/HappyBrackets" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
@@ -218,9 +225,51 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.HBBehaviour">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExampleHBBehaviour1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="new_outline.ExampleHBBehaviour1" />
+      <module name="HBModelRendererExample" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/Device/HappyBrackets" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="new_outline.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HBBehaviour" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="new_outline.HBBehaviour" />
+      <module name="HBModelRendererExample" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/Device/HappyBrackets" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="new_outline.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimpleRhythmExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="model_renderer_example.sketches.SimpleRhythmExample" />
+      <module name="HBModelRendererExample" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/Device/HappyBrackets" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model_renderer_example.sketches.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -247,6 +296,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.HBBehaviour" />
+        <item itemvalue="Application.ExampleHBBehaviour1" />
+        <item itemvalue="Application.SimpleRhythmExample" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -266,14 +322,27 @@
       <option name="project" value="LOCAL" />
       <updated>1613689145206</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="First version of using the new renderer architecture.&#10;Sketches are multiplicated to as many renderers the current device has, according to the config file.">
+      <created>1615439352981</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1615439352981</updated>
+    </task>
+    <task id="LOCAL-00003" summary="First version of using the new renderer architecture.&#10;Sketches are multiplicated to as many renderers the current device has, according to the config file.">
+      <created>1615439791151</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1615439791151</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1397" height="877" extended-state="0" />
-    <editor active="true" />
+    <frame x="67" y="25" width="1533" height="875" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28487086" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24209818" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24959612" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -282,20 +351,20 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49298894" weight="0.32738853" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.39444444" weight="0.34323922" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.46616542" weight="0.39823008" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.38959602" visible="true" weight="0.26407507" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.46264526" weight="0.39770555" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49676898" weight="0.32840723" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5092251" side_tool="true" visible="true" weight="0.32738853" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4907749" visible="true" weight="0.32738853" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5013835" side_tool="true" weight="0.3298279" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4986165" weight="0.3298279" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4864416" weight="0.32573727" />
       <window_info anchor="bottom" id="Problems" order="11" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" sideWeight="0.496063" weight="0.1648" />
       <window_info anchor="right" id="Palette" order="2" />
-      <window_info anchor="right" id="HappyBrackets" order="3" sideWeight="0.496063" weight="0.2204142" />
+      <window_info anchor="right" id="HappyBrackets" order="3" sideWeight="0.496063" weight="0.27505043" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
@@ -310,23 +379,99 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Ollie's examples in &quot;new_outline&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ollie's examples in &quot;new_outline&quot;" />
+    <MESSAGE value="First version of using the new renderer architecture.&#10;Sketches are multiplicated to as many renderers the current device has, according to the config file." />
+    <option name="LAST_COMMIT_MESSAGE" value="First version of using the new renderer architecture.&#10;Sketches are multiplicated to as many renderers the current device has, according to the config file." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/Device/HappyBrackets/HB.jar!/net/happybrackets/sychronisedmodel/RendererController.class</url>
+          <line>460</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>this.rendererClass.getField(&quot;installationConfig&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>new_outline.HBBehaviour</custom-info>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>this.rendererClass;</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>new_outline.HBBehaviour</custom-info>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>HBBehaviour.class.getField(&quot;installationConfig&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>new_outline.HBBehaviour</custom-info>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>HBBehaviour.class;</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>new_outline.HBBehaviour</custom-info>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>this.rendererClass.getClass();</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>new_outline.HBBehaviour</custom-info>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>HBBehaviour.class</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>new_outline.HBBehaviour</custom-info>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>HBBehaviour.class.getField(&quot;installationConfig&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>new_outline.HBBehaviour</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>this.rendererClass.getClass().getField(&quot;oscPort&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>this.rendererClass.getClass().getField(&quot;installationConfig&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>this.rendererClass.getClass()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>this.rendererClass</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>var35</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/model_renderer_example/sketches/HackExperimentQuadrants.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1770">
           <caret line="118" selection-start-line="118" selection-end-line="118" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model_renderer_example/sketches/SimpleRhythmExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="94" column="38" selection-start-line="94" selection-start-column="38" selection-end-line="94" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -360,13 +505,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/JoshEg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JoshEg.java" />
     <entry file="file://$PROJECT_DIR$/src/model_renderer_example/sketches/ExampleForASUFolks.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -384,34 +523,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/JoshEg2Analysis.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GranularDA1_custom_renderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3810">
-          <caret line="272" column="16" selection-start-line="272" selection-start-column="16" selection-end-line="272" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GranularDA1__renderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="427" column="46" selection-start-line="427" selection-start-column="46" selection-end-line="427" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model_renderer_example/renderers/SimpleLightRenderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JoshEg2Analysis.java" />
+    <entry file="file://$PROJECT_DIR$/src/GranularDA1_custom_renderer.java" />
+    <entry file="file://$PROJECT_DIR$/src/GranularDA1__renderer.java" />
     <entry file="file://$PROJECT_DIR$/src/model_renderer_example/renderers/GenericSampleAndClockRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -419,13 +533,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyExample.java">
+    <entry file="file://$PROJECT_DIR$/src/MyExample.java" />
+    <entry file="file://$PROJECT_DIR$/src/model_renderer_example/sketches/UnityTemplate.java" />
+    <entry file="file://$PROJECT_DIR$/src/model_renderer_example/renderers/SimpleLightRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="165">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model_renderer_example/sketches/CSVStuff.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/examples/basic/FrequencyEnvelope.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="26" selection-start-line="26" selection-end-line="27" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/new_outline/ExampleHBBehaviour2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/new_outline/RendererManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="619">
+          <caret line="65" column="13" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -436,45 +577,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/new_outline/ExampleHBBehaviour1.java">
+    <entry file="jar://$PROJECT_DIR$/Device/HappyBrackets/HB.jar!/net/happybrackets/device/HB.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        <state relative-caret-position="84">
+          <caret line="306" column="14" selection-start-line="306" selection-start-column="14" selection-end-line="306" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/new_outline/RendererManager.java">
+    <entry file="jar://$PROJECT_DIR$/Device/HappyBrackets/HB.jar!/net/happybrackets/sychronisedmodel/RendererController.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="70" column="89" selection-start-line="70" selection-start-column="89" selection-end-line="70" selection-end-column="89" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2806#2807#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/new_outline/ExampleHBBehaviour2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="68" selection-start-line="4" selection-start-column="68" selection-end-line="4" selection-end-column="68" />
+        <state relative-caret-position="15">
+          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/new_outline/GenericGranularHBRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        <state relative-caret-position="345">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/new_outline/ExampleHBBehaviour1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#379#380#0" expanded="true" />
+            <element signature="e#409#410#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model_renderer_example/sketches/SimpleRhythmExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5599#5658#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/new_outline/HBBehaviour.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        <state relative-caret-position="1262">
+          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

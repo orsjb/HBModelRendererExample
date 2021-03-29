@@ -5,8 +5,8 @@ import net.happybrackets.core.HBAction;
 import net.happybrackets.core.instruments.SampleModule;
 import net.happybrackets.core.scheduling.Clock;
 import net.happybrackets.device.HB;
-import net.happybrackets.sychronisedmodel.Renderer;
-import net.happybrackets.sychronisedmodel.RendererController;
+import net.happybrackets.sychronisedmodel.*;
+
 
 import java.lang.invoke.MethodHandles;
 
@@ -20,7 +20,10 @@ public class HBBehaviour extends Renderer implements HBAction {
     HB hb;
     RendererController rc = RendererController.getInstance();
 
+    @HBParam
     public boolean step1Finished = false;
+
+    @HBNumberRange(min = 1, max =10)
     public boolean step2Finished = false;
 
     public static boolean global_step2Finished = false;
@@ -47,8 +50,8 @@ public class HBBehaviour extends Renderer implements HBAction {
         colorMode(ColorMode.RGB, 255);
     }
 
-    @Override
     public void tick(Clock clock) {
+        super.tick(clock);
         System.out.println("tick: " + clock.getNumberTicks() + " device: " + this.name);
 
         if (type == Type.LIGHT) {
@@ -81,17 +84,14 @@ public class HBBehaviour extends Renderer implements HBAction {
         }
     }
 
-    @Override
+
     public void action(HB hb) {
-        this.hb = hb;
+        //this.hb = hb;
 
-        hb.reset();
-        hb.setStatus(this.getClass().getSimpleName() + " Loaded");
+        //hb.reset();
+        //hb.setStatus(this.getClass().getSimpleName() + " Loaded");
 
-        rc.getInternalClock().setInterval(1000);
-        rc.getInternalClock().start();
-
-        rc.addRenderer(Renderer.Type.SPEAKER, Device.getDeviceName(),120,200, 0,"Speaker-Left", 0);
+        //rc.addRenderer(Renderer.Type.SPEAKER, Device.getDeviceName(),120,200, 0,"Speaker-Left", 0);
     }
 
     //<editor-fold defaultstate="collapsed" desc="Debug Start">
