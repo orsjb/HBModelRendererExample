@@ -12,9 +12,10 @@ public abstract class HBBehaviour extends OutputRenderer implements HBAction {
     public static String installationConfig = "installationConfig.txt";
     public static int oscPort = 5555;
     public static RenderMode renderMode = RenderMode.UNITY;
+    public static int clockInterval = 20;
 
     @Override
-    public void action(HB hb) {
+    public final void action(HB hb) {
         //notify RendererManager to set me up
         RendererManager.getInstance().setup(this, hb);
     }

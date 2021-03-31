@@ -4,6 +4,12 @@ import net.happybrackets.device.HB;
 
 public class ExampleHBBehaviour1 extends HBBehaviour {
 
+    @annotated
+    float armx;
+
+    @annotated
+    int clusterGroup;
+
     @Override
     public void setupSound() {
 
@@ -19,8 +25,9 @@ public class ExampleHBBehaviour1 extends HBBehaviour {
 
     }
 
-    @Override
-    public void action(HB hb) {
-
+    @augustosannotation
+    public void setRedLight(float val) {
+        r = x + val;
     }
+
 }

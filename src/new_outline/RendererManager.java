@@ -56,6 +56,7 @@ public class RendererManager {
         try {
             String installConfig = behaviourClass.getField("installationConfig").toString();    //NOTE this is probably wrong
             //loadConfiguration(installConfig, etc);
+            //actually create the instances of the class
             outputRenderers.forEach(r -> {
                 //etc.
             });
