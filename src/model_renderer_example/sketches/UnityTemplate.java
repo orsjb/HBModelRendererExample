@@ -1,24 +1,22 @@
 package model_renderer_example.sketches;
 
-import de.sciss.net.OSCMessage;
 import model_renderer_example.renderers.GenericSampleAndClockRenderer;
+import net.beadsproject.beads.data.Sample;
+import net.beadsproject.beads.data.SampleManager;
+import net.beadsproject.beads.ugens.SamplePlayer;
 import net.happybrackets.core.HBAction;
 import net.happybrackets.core.HBReset;
-import net.happybrackets.core.OSCUDPListener;
-import net.happybrackets.core.control.BooleanControl;
-import net.happybrackets.core.control.DynamicControl;
-import net.happybrackets.core.control.FloatControl;
 import net.happybrackets.device.HB;
+import net.happybrackets.sychronisedmodel.Renderer;
 import net.happybrackets.sychronisedmodel.RendererController;
 
-
 import java.lang.invoke.MethodHandles;
-import java.lang.reflect.Method;
-import java.net.SocketAddress;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CSVStuff implements HBAction, HBReset {
+public class UnityTemplate implements HBAction, HBReset {
 
     RendererController rc = RendererController.getInstance();
     HB hb;
@@ -36,19 +34,37 @@ public class CSVStuff implements HBAction, HBReset {
         //set up the RC
         rc.setRendererClass(GenericSampleAndClockRenderer.class);
 
-        //For unity, use the HB simulator, send this code to the HB simulator
-        rc.loadHardwareConfigurationforUnity("config/hardware_setup_casula_km.csv");
+        //For unity, send this code to HB simulator
+        String computerName = null;
+        try {
+            computerName = InetAddress.getLocalHost().getHostName();
+        } catch (UnknownHostException e) {
+            e.printStackTrace();
+        }
+
+        //play stuff on your speakers at home
+        rc.addRenderer(Renderer.Type.SPEAKER,computerName,0,0,0,"speaker",0);
+        rc.addRenderer(Renderer.Type.SPEAKER,computerName,100,0,0,"speaker",0);
+
+        //properties of the renderers
+        rc.loadHardwareConfigurationforUnity("config/hardware_setup_casula.csv");
 
         //Assign each renderer a GenericSampleAndClockRenderer
         rc.renderers.forEach(renderer -> {
             renderers.add((GenericSampleAndClockRenderer) renderer);
         });
 
+        //setup
+        renderers.forEach(r->{
+
+
+        });
+
+        //do stuff
         rc.addClockTickListener((v, clock) -> {
-            renderers.forEach(r -> {
-                //write code here
-                }
-            });
+                renderers.forEach(r -> {
+
+                });
             rc.sendSerialcommand();
         });
     }
