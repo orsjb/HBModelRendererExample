@@ -72,7 +72,7 @@ public class WormHole implements HBAction, HBReset {
         } catch (UnknownHostException e) {
             e.printStackTrace();
         }
-        rc.loadHardwareConfigurationforUnity("config/hardware_setup_casula_km.csv");
+        rc.loadHardwareConfiguration("config/hardware_setup_casula.csv");
 
         //Assign each renderer a GenericSampleAndClockRenderer
         rc.renderers.forEach(renderer -> {
