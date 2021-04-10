@@ -2,7 +2,6 @@ package model_renderer_example.sketches;
 
 import de.sciss.net.OSCListener;
 import de.sciss.net.OSCMessage;
-import model_renderer_example.renderers.GenericSampleAndClockRenderer;
 import net.beadsproject.beads.data.SampleManager;
 import net.beadsproject.beads.ugens.SamplePlayer;
 import net.happybrackets.core.Device;
@@ -10,8 +9,9 @@ import net.happybrackets.core.HBAction;
 import net.happybrackets.core.HBReset;
 import net.happybrackets.core.OSCUDPListener;
 import net.happybrackets.device.HB;
-import net.happybrackets.sychronisedmodel.Renderer;
-import net.happybrackets.sychronisedmodel.RendererController;
+import net.happybrackets.rendererengine.GranularRenderer;
+import net.happybrackets.rendererengine.Renderer;
+import net.happybrackets.rendererengine.RendererController;
 
 import java.lang.invoke.MethodHandles;
 import java.net.SocketAddress;
@@ -24,8 +24,8 @@ public class ExampleForASUFolks implements HBAction, HBReset {
 
     RendererController rc = RendererController.getInstance();
     HB hb;
-    List<GenericSampleAndClockRenderer> renderers = new ArrayList();
-    Map<GenericSampleAndClockRenderer, Integer> rendererIDs = new HashMap<>();
+    List<GranularRenderer> renderers = new ArrayList();
+    Map<GranularRenderer, Integer> rendererIDs = new HashMap<>();
 
     int INSTALL_WIDTH = 450; //cm
     int INSTALL_HEIGHT = 200; //cm
@@ -43,7 +43,7 @@ public class ExampleForASUFolks implements HBAction, HBReset {
         rc.getInternalClock().start();
         //adding some samples
         //set up the RC
-        rc.setRendererClass(GenericSampleAndClockRenderer.class);
+        rc.setRendererClass(GranularRenderer.class);
         //set up the configuration of the system
         //rc.loadHardwareConfiguration("config/hardware_setup_casula_iml.csv");
         String hostname = Device.getDeviceName();
@@ -58,7 +58,7 @@ public class ExampleForASUFolks implements HBAction, HBReset {
         SampleManager.group("guitar", "data/audio/Nylon_Guitar");
 
         //for convenience, grab the list of renderers cast to the class we are using
-        rc.renderers.forEach(renderer -> {renderers.add((GenericSampleAndClockRenderer) renderer);});
+        rc.renderers.forEach(renderer -> {renderers.add((GranularRenderer) renderer);});
         //some basic configuration
         renderers.forEach(r -> {    // <- this is like the setup() function in Processing
             //DO SET UP HERE

@@ -1,7 +1,7 @@
 package model_renderer_example.sketches;
 
 import de.sciss.net.OSCMessage;
-import model_renderer_example.renderers.GenericSampleAndClockRenderer;
+
 import net.happybrackets.core.HBAction;
 import net.happybrackets.core.HBReset;
 import net.happybrackets.core.OSCUDPListener;
@@ -9,7 +9,9 @@ import net.happybrackets.core.control.BooleanControl;
 import net.happybrackets.core.control.DynamicControl;
 import net.happybrackets.core.control.FloatControl;
 import net.happybrackets.device.HB;
-import net.happybrackets.sychronisedmodel.RendererController;
+import net.happybrackets.rendererengine.GranularRenderer;
+import net.happybrackets.rendererengine.RendererController;
+
 
 import java.lang.invoke.MethodHandles;
 import java.lang.reflect.Method;
@@ -21,7 +23,7 @@ public class CSVStuff implements HBAction, HBReset {
 
     RendererController rc = RendererController.getInstance();
     HB hb;
-    List<GenericSampleAndClockRenderer> renderers = new ArrayList<>();
+    List<GranularRenderer> renderers = new ArrayList<>();
 
     @Override
     public void action(HB hb) {
@@ -33,14 +35,14 @@ public class CSVStuff implements HBAction, HBReset {
         rc.getInternalClock().start();
 
         //set up the RC
-        rc.setRendererClass(GenericSampleAndClockRenderer.class);
+        rc.setRendererClass(GranularRenderer.class);
 
         //For unity, use the HB simulator, send this code to the HB simulator
         rc.loadHardwareConfigurationforUnity("Device/HappyBrackets/config/hardware_setup_casula_km.csv");
 
         //Assign each renderer a GenericSampleAndClockRenderer
         rc.renderers.forEach(renderer -> {
-            renderers.add((GenericSampleAndClockRenderer) renderer);
+            renderers.add((GranularRenderer) renderer);
         });
 
         rc.addClockTickListener((v, clock) -> {

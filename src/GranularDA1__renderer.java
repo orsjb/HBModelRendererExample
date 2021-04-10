@@ -11,8 +11,7 @@ import net.happybrackets.core.OSCUDPSender;
 import net.happybrackets.core.scheduling.Clock;
 import net.happybrackets.device.HB;
 import net.happybrackets.device.sensors.AccelerometerListener;
-import net.happybrackets.sychronisedmodel.Renderer;
-import net.happybrackets.sychronisedmodel.RendererController;
+import net.happybrackets.rendererengine.*;
 
 import java.lang.invoke.MethodHandles;
 import java.net.SocketAddress;
@@ -27,7 +26,7 @@ public class GranularDA1__renderer implements HBAction {
 
     RendererController rc = RendererController.getInstance();
     HB hb;
-    List<GenericSampleAndClockRenderer> renderers = new ArrayList<>();
+    List<GranularRenderer> renderers = new ArrayList<>();
     Map<Renderer, Integer> rendererIndices = new HashMap<>();
 
     //playback & granulation parameters
@@ -92,12 +91,12 @@ public class GranularDA1__renderer implements HBAction {
          */
 
         //set up the RC for unity sim with GenericSampleAndClock
-        rc.setRendererClass(GenericSampleAndClockRenderer.class);
+        rc.setRendererClass(GranularRenderer.class);
         rc.loadHardwareConfigurationforUnity("config/hardware_setup_casula.csv"); //204 light renderers
 //        rc.loadHardwareConfiguration("config/hardware_setup_casula.csv"); // for at Casula
 
         rc.renderers.forEach(renderer -> {
-            renderers.add((GenericSampleAndClockRenderer) renderer);
+            renderers.add((GranularRenderer) renderer);
             rendererIndices.put(renderer, hb.rng.nextInt(4));
         });
 
@@ -188,7 +187,7 @@ public class GranularDA1__renderer implements HBAction {
                 //By this line, we are in a clock loop, for each renderer
 
                 int rendererIndex = rendererIndices.get(renderer);
-                GenericSampleAndClockRenderer myRenderer = (GenericSampleAndClockRenderer)renderer;
+                GranularRenderer myRenderer = (GranularRenderer)renderer;
 
                 //blob pattern1
 

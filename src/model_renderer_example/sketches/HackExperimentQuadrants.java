@@ -9,8 +9,7 @@ import net.happybrackets.core.control.ControlScope;
 import net.happybrackets.core.control.DynamicControl;
 import net.happybrackets.core.control.FloatControl;
 import net.happybrackets.device.HB;
-import net.happybrackets.sychronisedmodel.Renderer;
-import net.happybrackets.sychronisedmodel.RendererController;
+import net.happybrackets.rendererengine.*;
 
 import java.lang.invoke.MethodHandles;
 import java.net.InetAddress;

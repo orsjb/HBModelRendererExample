@@ -5,7 +5,7 @@ import net.happybrackets.core.HBAction;
 import net.happybrackets.core.instruments.SampleModule;
 import net.happybrackets.core.scheduling.Clock;
 import net.happybrackets.device.HB;
-import net.happybrackets.sychronisedmodel.*;
+import net.happybrackets.rendererengine.*;
 
 
 import java.lang.invoke.MethodHandles;

@@ -5,8 +5,7 @@ import net.beadsproject.beads.data.Buffer;
 import net.beadsproject.beads.data.Sample;
 import net.beadsproject.beads.data.SampleManager;
 import net.beadsproject.beads.ugens.*;
-import net.happybrackets.sychronisedmodel.Renderer;
-import net.happybrackets.sychronisedmodel.RendererController;
+import net.happybrackets.rendererengine.*;
 import java.util.ArrayList;
 import java.util.List;
 

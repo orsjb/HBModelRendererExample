@@ -7,8 +7,9 @@ import net.happybrackets.core.Device;
 import net.happybrackets.core.HBAction;
 import net.happybrackets.core.HBReset;
 import net.happybrackets.device.HB;
-import net.happybrackets.sychronisedmodel.Renderer;
-import net.happybrackets.sychronisedmodel.RendererController;
+import net.happybrackets.rendererengine.GranularRenderer;
+import net.happybrackets.rendererengine.Renderer;
+import net.happybrackets.rendererengine.RendererController;
 
 import java.lang.invoke.MethodHandles;
 import java.net.SocketAddress;
@@ -19,7 +20,7 @@ public class ExampleForASUFolksBLANK implements HBAction, HBReset {
 
     RendererController rc = RendererController.getInstance();
     HB hb;
-    List<GenericSampleAndClockRenderer> renderers = new ArrayList();
+    List<GranularRenderer> renderers = new ArrayList();
 
     int count = 0;
 
@@ -34,7 +35,7 @@ public class ExampleForASUFolksBLANK implements HBAction, HBReset {
         rc.getInternalClock().start();
         //adding some samples
         //set up the RC
-        rc.setRendererClass(GenericSampleAndClockRenderer.class);
+        rc.setRendererClass(GranularRenderer.class);
         //set up the configuration of the system
         //rc.loadHardwareConfiguration("config/hardware_setup_casula_iml_test.csv");
         String hostname = Device.getDeviceName();
@@ -47,7 +48,7 @@ public class ExampleForASUFolksBLANK implements HBAction, HBReset {
         hb.setStatus(hostname + ", I Have " + rc.renderers.size() + " objects");
 
         //for convenience, grab the list of renderers cast to the class we are using
-        rc.renderers.forEach(renderer -> {renderers.add((GenericSampleAndClockRenderer) renderer);});
+        rc.renderers.forEach(renderer -> {renderers.add((GranularRenderer) renderer);});
         //some basic configuration
         renderers.forEach(r -> {
             //DO SET UP HERE

@@ -7,8 +7,9 @@ import net.happybrackets.core.HBAction;
 import net.happybrackets.core.HBReset;
 import net.happybrackets.core.OSCUDPListener;
 import net.happybrackets.device.HB;
-import net.happybrackets.sychronisedmodel.Renderer;
-import net.happybrackets.sychronisedmodel.RendererController;
+import net.happybrackets.rendererengine.GranularRenderer;
+import net.happybrackets.rendererengine.Renderer;
+import net.happybrackets.rendererengine.RendererController;
 
 import java.lang.invoke.MethodHandles;
 import java.lang.reflect.Method;
@@ -24,7 +25,7 @@ public class WormHole implements HBAction, HBReset {
 
     RendererController rc = RendererController.getInstance();
     HB hb;
-    List<GenericSampleAndClockRenderer> renderers = new ArrayList<>();
+    List<GranularRenderer> renderers = new ArrayList<>();
     Map<Renderer, float[]> cachedAngles = new HashMap<>();
 
     float piT = 0;
@@ -63,7 +64,7 @@ public class WormHole implements HBAction, HBReset {
         rc.getInternalClock().start();
 
         //set up the RC
-        rc.setRendererClass(GenericSampleAndClockRenderer.class);
+        rc.setRendererClass(GranularRenderer.class);
 
         //For unity, use the HB simulator, send this code to the HB simulator
         String computerName = null;
@@ -76,7 +77,7 @@ public class WormHole implements HBAction, HBReset {
 
         //Assign each renderer a GenericSampleAndClockRenderer
         rc.renderers.forEach(renderer -> {
-            renderers.add((GenericSampleAndClockRenderer) renderer);
+            renderers.add((GranularRenderer) renderer);
         });
 
 

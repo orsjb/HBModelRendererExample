@@ -1,7 +1,6 @@
 package model_renderer_example.renderers;
 
-import net.happybrackets.sychronisedmodel.Renderer;
-import net.happybrackets.sychronisedmodel.RendererController;
+import net.happybrackets.rendererengine.*;
 
 public class SimpleLightRenderer extends Renderer {
     public boolean step1Finished = false;

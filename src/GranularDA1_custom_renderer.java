@@ -8,8 +8,7 @@ import net.happybrackets.core.HBAction;
 import net.happybrackets.core.OSCUDPListener;
 import net.happybrackets.core.OSCUDPSender;
 import net.happybrackets.device.HB;
-import net.happybrackets.sychronisedmodel.Renderer;
-import net.happybrackets.sychronisedmodel.RendererController;
+import net.happybrackets.rendererengine.*;
 
 import java.lang.invoke.MethodHandles;
 import java.net.SocketAddress;

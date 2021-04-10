@@ -10,8 +10,8 @@ import net.happybrackets.core.HBAction;
 import net.happybrackets.core.HBReset;
 import net.happybrackets.core.OSCUDPListener;
 import net.happybrackets.device.HB;
-import net.happybrackets.sychronisedmodel.Renderer;
-import net.happybrackets.sychronisedmodel.RendererController;
+import net.happybrackets.rendererengine.Renderer;
+import net.happybrackets.rendererengine.RendererController;
 import org.jetbrains.annotations.NotNull;
 
 import java.lang.invoke.MethodHandles;

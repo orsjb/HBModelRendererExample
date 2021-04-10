@@ -1,7 +1,7 @@
 package model_renderer_example.sketches;
 
 import de.sciss.net.OSCMessage;
-import model_renderer_example.renderers.GenericSampleAndClockRenderer;
+
 import net.happybrackets.core.HBAction;
 import net.happybrackets.core.HBReset;
 import net.happybrackets.core.OSCUDPListener;
@@ -9,7 +9,7 @@ import net.happybrackets.core.control.BooleanControl;
 import net.happybrackets.core.control.DynamicControl;
 import net.happybrackets.core.control.FloatControl;
 import net.happybrackets.device.HB;
-import net.happybrackets.sychronisedmodel.RendererController;
+import net.happybrackets.rendererengine.*;
 
 
 import java.lang.invoke.MethodHandles;
@@ -41,7 +41,7 @@ public class OrbitExample implements HBAction, HBReset {
 
     RendererController rc = RendererController.getInstance();
     HB hb;
-    List<GenericSampleAndClockRenderer> renderers = new ArrayList<>();
+    List<GranularRenderer> renderers = new ArrayList<>();
 
     @Override
     public void action(HB hb) {
@@ -53,14 +53,14 @@ public class OrbitExample implements HBAction, HBReset {
         rc.getInternalClock().start();
 
         //set up the RC
-        rc.setRendererClass(GenericSampleAndClockRenderer.class);
+        rc.setRendererClass(GranularRenderer.class);
 
         //For unity, send this sketch to the HB simulator
         rc.loadHardwareConfigurationforUnity("config/hardware_setup_casula.csv");
 
         //Assign each renderer a GenericSampleAndClockRenderer
         rc.renderers.forEach(renderer -> {
-            renderers.add((GenericSampleAndClockRenderer) renderer);
+            renderers.add((GranularRenderer) renderer);
         });
 
         // this block of code animates a blob rotating around r.x and r.z
