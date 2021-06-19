@@ -52,105 +52,87 @@ public class Shomit_12 extends Renderer {
         if(angleHeight[0] < TWO_PI * 0.25 && angleHeight[0] > 0f) { //everything in this if is quadrant one
             float quadrantHue = 0f;  //every quadrant has the same hue...
 
-            if(angleHeight[1] < 0.25){  //every row a different saturation
+            if(angleHeight[1] < 0.33){  //every row a different saturation
                 int myRGB[] = RGBFromHue(quadrantHue,1,1 - (aBeat * 0.01f));
                 displayColor(myRGB);//every renderer in this region displays the array above.
             }
 
-            if(angleHeight[1] > 0.25 && angleHeight[1] < 0.5){ //everything here in the second lowest ring etc...
-                int myRGB[] = RGBFromHue(quadrantHue,0.75f,1 - (aBeat * 0.01f));
+            if(angleHeight[1] > 0.33 && angleHeight[1] < 0.66){ //everything here in the second lowest ring etc...
+                int myRGB[] = RGBFromHue(quadrantHue,0.5f,1 - (aBeat * 0.01f));
                 displayColor(myRGB);
 
                 //each if statement is a section inside a quadrant.
 
-
             }
 
-            if(angleHeight[1] > 0.5 && angleHeight[1] < 0.75){
-                int myRGB[] = RGBFromHue(quadrantHue,0.5f,1 - (aBeat * 0.01f));
+            if(angleHeight[1] > 0.66){
+                int myRGB[] = RGBFromHue(quadrantHue,0f,0 + (aBeat * 0.01f));
                 displayColor(myRGB);
             }
 
-            if(angleHeight[1] > 0.75 && angleHeight[1] < 1){
-                int myRGB[] = RGBFromHue(quadrantHue,0.25f,1 - (aBeat * 0.01f));
-                displayColor(myRGB);
-            }
 
         }
 
         if(angleHeight[0] > TWO_PI * 0.25 && angleHeight[0] < TWO_PI * 0.5) { //this is the second quadrant
             float quadrantHue = 0.25f;
 
-            if(angleHeight[1] < 0.25){
-                int myRGB[] = RGBFromHue(quadrantHue,1,1 - (aBeat * 0.01f));
+            if (angleHeight[1] < 0.33) {
+                int myRGB[] = RGBFromHue(quadrantHue, 1, 1 - (aBeat * 0.01f));
                 displayColor(myRGB);
             }
 
-            if(angleHeight[1] > 0.25 && angleHeight[1] < 0.5){
-                int myRGB[] = RGBFromHue(quadrantHue,0.75f,1 - (aBeat * 0.01f));
+            if (angleHeight[1] > 0.33 && angleHeight[1] < 0.66) {
+                int myRGB[] = RGBFromHue(quadrantHue, 0.5f, 1 - (aBeat * 0.01f));
                 displayColor(myRGB);
             }
 
-            if(angleHeight[1] > 0.5 && angleHeight[1] < 0.75){
-                displayColor(0,255,0); //this particular section make a different colour for this region
-            }
-
-            if(angleHeight[1] > 0.75 && angleHeight[1] < 1){
-                int myRGB[] = RGBFromHue(quadrantHue,0.25f,1 - (aBeat * 0.01f));
-                displayColor(myRGB);
+            if(angleHeight[1] > 0.66) {
+                displayColor(0, 255, 0); //this particular section make a different colour for this region, using RGB.
             }
         }
 
         if(angleHeight[0] > TWO_PI * 0.5 && angleHeight[0] < TWO_PI * 0.75) {
             float quadrantHue = 0.5f;
 
-            if (angleHeight[1] < 0.25) {
+            if (angleHeight[1] < 0.33) {
                 int myRGB[] = RGBFromHue(quadrantHue, 1, 1 - (aBeat * 0.01f));
                 displayColor(myRGB);
             }
 
-            if (angleHeight[1] > 0.25 && angleHeight[1] < 0.5) { //this section
+            if (angleHeight[1] > 0.33 && angleHeight[1] < 0.66) { //this section
                 if(this.type == Type.SPEAKER) {
                     sp.setSample(s);
                     g.setGain(aBeat * 0.005f);
                 }
-                int myRGB[] = RGBFromHue(quadrantHue, 0.75f, aBeat * 0.005f);
+                int myRGB[] = RGBFromHue(quadrantHue, 0.5f, aBeat * 0.005f);
                 displayColor(myRGB);
             }
 
-            if (angleHeight[1] > 0.5 && angleHeight[1] < 0.75) {
-                int myRGB[] = RGBFromHue(quadrantHue, 0.5f, 1 - (aBeat * 0.01f));
+            if(angleHeight[1] > 0.66) {
+                int myRGB[] = RGBFromHue(quadrantHue, 0f, 1 - (aBeat * 0.01f));
                 displayColor(myRGB);
             }
 
-            if (angleHeight[1] > 0.75 && angleHeight[1] < 1) {
-                int myRGB[] = RGBFromHue(quadrantHue, 0.25f, 1 - (aBeat * 0.01f));
-                displayColor(myRGB);
-            }
         }
 
         if(angleHeight[0] > TWO_PI * 0.75 && angleHeight[0] < TWO_PI) {
             float quadrantHue = 0.75f;
 
-            if (angleHeight[1] < 0.25) {
+            if (angleHeight[1] < 0.33) {
                 int myRGB[] = RGBFromHue(quadrantHue, 1, 1 - (aBeat * 0.01f));
                 displayColor(myRGB);
             }
 
-            if (angleHeight[1] > 0.25 && angleHeight[1] < 0.5) {
-                int myRGB[] = RGBFromHue(quadrantHue, 0.75f, 1 - (aBeat * 0.01f));
-                displayColor(myRGB);
-            }
-
-            if (angleHeight[1] > 0.5 && angleHeight[1] < 0.75) {
+            if (angleHeight[1] > 0.33 && angleHeight[1] < 0.66) {
                 int myRGB[] = RGBFromHue(quadrantHue, 0.5f, 1 - (aBeat * 0.01f));
                 displayColor(myRGB);
             }
 
-            if (angleHeight[1] > 0.75 && angleHeight[1] < 1) {
-                int myRGB[] = RGBFromHue(quadrantHue, 0.25f, 1 - (aBeat * 0.01f));
+            if(angleHeight[1] > 0.66) {
+                int myRGB[] = RGBFromHue(quadrantHue, 0f, 1 - (aBeat * 0.01f));
                 displayColor(myRGB);
             }
+
         }
 
     }
